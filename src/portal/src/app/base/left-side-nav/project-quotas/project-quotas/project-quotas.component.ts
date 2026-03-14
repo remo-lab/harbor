@@ -59,6 +59,7 @@ import { FilterComponent } from '../../../../shared/components/filter/filter.com
 const QuotaType = 'project';
 
 @Component({
+    standalone: false,
     selector: 'project-quotas',
     templateUrl: './project-quotas.component.html',
     styleUrls: ['./project-quotas.component.scss'],

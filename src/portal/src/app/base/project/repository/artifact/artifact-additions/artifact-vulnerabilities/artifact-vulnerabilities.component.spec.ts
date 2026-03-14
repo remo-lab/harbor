@@ -18,7 +18,6 @@ import { ClarityModule } from '@clr/angular';
 import { AdditionsService } from '../additions.service';
 import { of } from 'rxjs';
 import {
-    TranslateFakeLoader,
     TranslateLoader,
     TranslateModule,
 } from '@ngx-translate/core';
@@ -117,7 +116,7 @@ describe('ArtifactVulnerabilitiesComponent', () => {
                 TranslateModule.forRoot({
                     loader: {
                         provide: TranslateLoader,
-                        useClass: TranslateFakeLoader,
+                        useValue: { getTranslation: () => import("rxjs").then(m => m.of({})) },
                     },
                 }),
             ],

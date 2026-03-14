@@ -44,6 +44,7 @@ const STATE_CHECK_INTERVAL: number = 3000; // 3s
 const RETRY_TIMES: number = 3;
 
 @Component({
+    standalone: false,
     selector: 'hbr-sbom-bar',
     templateUrl: './sbom-scan-component.html',
     styleUrls: ['./scanning.scss'],

@@ -28,6 +28,7 @@ import { finalize } from 'rxjs/operators';
 import { ConfigService } from '../config.service';
 
 @Component({
+    standalone: false,
     selector: 'config-auth',
     templateUrl: 'config-auth.component.html',
     styleUrls: ['./config-auth.component.scss', '../config.component.scss'],

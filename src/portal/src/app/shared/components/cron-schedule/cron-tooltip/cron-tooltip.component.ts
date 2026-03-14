@@ -14,6 +14,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'cron-tooltip',
     templateUrl: './cron-tooltip.component.html',
     styleUrls: ['./cron-tooltip.component.scss'],

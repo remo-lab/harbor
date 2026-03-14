@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import { Component } from '@angular/core';
-import { ClrDatagridStateInterface } from '@clr/angular/data/datagrid/interfaces/state.interface';
+import { ClrDatagridStateInterface } from '@clr/angular/data/datagrid';
 import {
     doSorting,
     getPageSizeFromLocalStorage,
@@ -26,6 +26,7 @@ import { JobServiceDashboardSharedDataService } from '../job-service-dashboard-s
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'app-schedule-list',
     templateUrl: './schedule-list.component.html',
     styleUrls: ['./schedule-list.component.scss'],

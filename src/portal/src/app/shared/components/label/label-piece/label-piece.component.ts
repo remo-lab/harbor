@@ -16,6 +16,7 @@ import { LabelColor } from '../../../entities/shared.const';
 import { Label } from '../../../../../../ng-swagger-gen/models/label';
 
 @Component({
+    standalone: false,
     selector: 'hbr-label-piece',
     templateUrl: './label-piece.component.html',
     styleUrls: ['./label-piece.component.scss'],

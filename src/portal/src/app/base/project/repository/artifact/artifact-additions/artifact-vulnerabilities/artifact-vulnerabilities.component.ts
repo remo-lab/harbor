@@ -48,6 +48,7 @@ import { severityText } from '../../../../../left-side-nav/interrogation-service
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-vulnerabilities',
     templateUrl: './artifact-vulnerabilities.component.html',
     styleUrls: ['./artifact-vulnerabilities.component.scss'],

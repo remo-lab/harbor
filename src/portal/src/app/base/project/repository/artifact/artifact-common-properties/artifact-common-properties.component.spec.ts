@@ -16,7 +16,6 @@ import { ArtifactCommonPropertiesComponent } from './artifact-common-properties.
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-    TranslateFakeLoader,
     TranslateLoader,
     TranslateModule,
     TranslateService,
@@ -41,7 +40,7 @@ describe('ArtifactCommonPropertiesComponent', () => {
                 TranslateModule.forRoot({
                     loader: {
                         provide: TranslateLoader,
-                        useClass: TranslateFakeLoader,
+                        useValue: { getTranslation: () => import("rxjs").then(m => m.of({})) },
                     },
                 }),
             ],

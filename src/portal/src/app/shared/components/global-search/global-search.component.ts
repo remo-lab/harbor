@@ -38,6 +38,7 @@ const deBounceTime = 500; // ms
 const SEARCH_KEY: string = 'globalSearch';
 
 @Component({
+    standalone: false,
     selector: 'global-search',
     templateUrl: 'global-search.component.html',
     styleUrls: ['search.component.scss'],

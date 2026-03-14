@@ -20,6 +20,7 @@ import { RetentionService } from '../../../../../../../../ng-swagger-gen/service
 import { TagRetentionService } from '../../tag-retention.service';
 
 @Component({
+    standalone: false,
     selector: 'app-tag-retention-tasks',
     templateUrl: './tag-retention-tasks.component.html',
     styleUrls: ['./tag-retention-tasks.component.css'],

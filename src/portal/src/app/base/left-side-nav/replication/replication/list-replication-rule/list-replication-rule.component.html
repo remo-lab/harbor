@@ -3,8 +3,8 @@
         #datagrid
         (clrDgRefresh)="clrLoad($event)"
         [clrDgLoading]="loading"
-        [(clrDgSingleSelected)]="selectedRow"
-        (clrDgSingleSelectedChange)="selectRule($event)">
+        [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedRow"
+        (clrDgSelectedChange)="selectRule($event)">
         <clr-dg-action-bar>
             <button
                 type="button"
@@ -12,7 +12,7 @@
                 class="btn btn-secondary"
                 *ngIf="hasCreateReplicationPermission"
                 (click)="openModal()">
-                <clr-icon shape="plus" size="16"></clr-icon>&nbsp;{{
+                <cds-icon shape="plus" size="16"></cds-icon>&nbsp;{{
                     'REPLICATION.NEW_REPLICATION_RULE' | translate
                 }}
             </button>
@@ -23,7 +23,7 @@
                 *ngIf="hasExecuteReplicationPermission"
                 [disabled]="!selectedRow || !selectedRow.enabled"
                 (click)="replicateRule(selectedRow)">
-                <clr-icon shape="export" size="16"></clr-icon>&nbsp;{{
+                <cds-icon shape="export" size="16"></cds-icon>&nbsp;{{
                     'REPLICATION.REPLICATE' | translate
                 }}
             </button>
@@ -33,7 +33,7 @@
                 clrDropdownTrigger>
                 <span id="rule-action"
                     >{{ 'BUTTON.ACTIONS' | translate
-                    }}<clr-icon shape="caret down"></clr-icon
+                    }}<cds-icon shape="caret down"></cds-icon
                 ></span>
                 <clr-dropdown-menu *clrIfOpen>
                     <clr-dropdown>
@@ -42,7 +42,7 @@
                             class="btn btn-secondary"
                             (click)="editRule(selectedRow)"
                             [disabled]="!selectedRow">
-                            <clr-icon shape="edit" size="16"></clr-icon>&nbsp;
+                            <cds-icon shape="edit" size="16"></cds-icon>&nbsp;
                             <span id="edit_replication_rule_id">{{
                                 'BUTTON.EDIT' | translate
                             }}</span>
@@ -53,9 +53,9 @@
                             class="btn btn-secondary"
                             (click)="operateRule('enable', selectedRow)"
                             [disabled]="!(selectedRow && !selectedRow.enabled)">
-                            <clr-icon
+                            <cds-icon
                                 size="16"
-                                shape="success-standard"></clr-icon
+                                shape="success-standard"></cds-icon
                             >&nbsp;
                             <span id="rule-enable">{{
                                 'WEBHOOK.ENABLED_BUTTON' | translate
@@ -70,7 +70,7 @@
                             class="btn btn-secondary"
                             (click)="operateRule('disable', selectedRow)"
                             [disabled]="!(selectedRow && selectedRow.enabled)">
-                            <clr-icon size="16" shape="ban"></clr-icon>&nbsp;
+                            <cds-icon size="16" shape="ban"></cds-icon>&nbsp;
                             <span id="rule-disable">{{
                                 'WEBHOOK.DISABLED_BUTTON' | translate
                             }}</span>
@@ -81,7 +81,7 @@
                             class="btn btn-secondary"
                             (click)="deleteRule(selectedRow)"
                             [disabled]="!selectedRow">
-                            <clr-icon shape="window-close" size="16"></clr-icon
+                            <cds-icon shape="window-close" size="16"></cds-icon
                             >&nbsp;
                             <span id="delete_replication_rule_id">{{
                                 'BUTTON.DELETE' | translate
@@ -144,17 +144,17 @@
             <clr-dg-cell class="status-width">
                 <div>
                     <div *ngIf="!p?.enabled">
-                        <clr-icon
+                        <cds-icon
                             shape="exclamation-triangle"
                             class="is-warning text-alignment"
-                            size="18"></clr-icon>
+                            size="18"></cds-icon>
                         {{ 'WEBHOOK.DISABLED' | translate }}
                     </div>
                     <div *ngIf="p?.enabled">
-                        <clr-icon
+                        <cds-icon
                             shape="success-standard"
                             class="is-success text-alignment"
-                            size="18"></clr-icon>
+                            size="18"></cds-icon>
                         {{ 'WEBHOOK.ENABLED' | translate }}
                     </div>
                 </div>
@@ -185,11 +185,11 @@
             <clr-dg-cell>
                 {{ p.description ? trancatedDescription(p.description) : '-' }}
                 <clr-tooltip>
-                    <clr-icon
+                    <cds-icon
                         *ngIf="p.description && p.description.length > 35"
                         clrTooltipTrigger
                         shape="ellipsis-horizontal"
-                        size="18"></clr-icon>
+                        size="18"></cds-icon>
                     <clr-tooltip-content
                         clrPosition="bottom-right"
                         clrSize="md"

@@ -3,7 +3,7 @@
         <div class="row flex-items-xs-right rightPos">
             <div class="flex-xs-middle option-right">
                 <span class="refresh-btn" (click)="refresh()"
-                    ><clr-icon shape="refresh"></clr-icon
+                    ><cds-icon shape="refresh"></cds-icon
                 ></span>
             </div>
         </div>
@@ -20,10 +20,10 @@
                             class="btn btn-secondary"
                             [clrLoading]="downloadSbomBtnState"
                             [disabled]="!canDownloadSbom()">
-                            <clr-icon
+                            <cds-icon
                                 shape="download"
                                 size="16"
-                                *ngIf="!isRunningState()"></clr-icon
+                                *ngIf="!isRunningState()"></cds-icon
                             >&nbsp;
                             <span *ngIf="!isRunningState()">{{
                                 'SBOM.DOWNLOAD' | translate

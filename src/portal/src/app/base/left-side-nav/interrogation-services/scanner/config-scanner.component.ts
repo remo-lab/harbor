@@ -37,6 +37,7 @@ import { ClrDatagridStateInterface } from '@clr/angular';
 import { ScannerRegistrationReq } from '../../../../../../ng-swagger-gen/models/scanner-registration-req';
 
 @Component({
+    standalone: false,
     selector: 'config-scanner',
     templateUrl: 'config-scanner.component.html',
     styleUrls: [

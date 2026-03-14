@@ -25,6 +25,7 @@ import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
 @Component({
+    standalone: false,
     selector: 'hbr-filter',
     templateUrl: './filter.component.html',
     styleUrls: ['./filter.component.scss'],

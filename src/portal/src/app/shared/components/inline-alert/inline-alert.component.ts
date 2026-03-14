@@ -18,6 +18,7 @@ import { ErrorHandler } from '../../units/error-handler';
 import { errorHandler } from '../../units/shared.utils';
 
 @Component({
+    standalone: false,
     selector: 'inline-alert',
     templateUrl: './inline-alert.component.html',
     styleUrls: ['./inline-alert.component.scss'],

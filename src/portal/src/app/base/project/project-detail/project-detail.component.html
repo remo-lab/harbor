@@ -21,14 +21,14 @@
 <div class="clr-row">
     <div class="clr-col-5">
         <h1 class="custom-h2 center" sub-header-title>
-            <clr-icon
+            <cds-icon
                 *ngIf="isProxyCacheProject"
                 shape="cloud-traffic"
-                size="30"></clr-icon>
-            <clr-icon
+                size="30"></cds-icon>
+            <cds-icon
                 *ngIf="!isProxyCacheProject"
                 shape="organization"
-                size="30"></clr-icon>
+                size="30"></cds-icon>
             <span class="ml-05 project-name">{{ currentProject.name }}</span>
             <div class="divider filter-divider" *ngIf="isMember"></div>
             <span class="role-label" *ngIf="isMember">{{

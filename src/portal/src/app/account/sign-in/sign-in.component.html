@@ -14,7 +14,7 @@
                 *ngIf="isOidcLoginMode && steps === 2"
                 (click)="steps = 1"
                 class="back-icon">
-                <clr-icon shape="angle left"></clr-icon>
+                <cds-icon shape="angle left"></cds-icon>
                 <div class="margin-left-3">{{ 'SEARCH.BACK' | translate }}</div>
             </span>
             <label class="title">
@@ -107,19 +107,19 @@
                                         'PLACEHOLDER.SIGN_IN_PWD' | translate
                                     }}"
                                     #passwordInput="ngModel" />
-                                <clr-icon
+                                <cds-icon
                                     *ngIf="!showPwd"
                                     shape="eye"
                                     class="pw-eye"
-                                    (click)="showPwd = !showPwd"></clr-icon>
-                                <clr-icon
+                                    (click)="showPwd = !showPwd"></cds-icon>
+                                <cds-icon
                                     *ngIf="showPwd"
                                     shape="eye-hide"
                                     class="pw-eye"
-                                    (click)="showPwd = !showPwd"></clr-icon>
-                                <clr-icon
+                                    (click)="showPwd = !showPwd"></cds-icon>
+                                <cds-icon
                                     class="clr-validate-icon"
-                                    shape="exclamation-circle"></clr-icon>
+                                    shape="exclamation-circle"></cds-icon>
                             </div>
                             <clr-control-error
                                 *ngIf="

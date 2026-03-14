@@ -23,6 +23,7 @@ import {
 // The route path which will display this component
 const URL_TO_DISPLAY: string = '/harbor/replications';
 @Component({
+    standalone: false,
     selector: 'total-replication',
     templateUrl: 'total-replication-page.component.html',
     styleUrls: ['./total-replication-page.component.scss'],

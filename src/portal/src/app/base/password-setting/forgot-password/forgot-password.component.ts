@@ -17,6 +17,7 @@ import { PasswordSettingService } from '../password-setting.service';
 import { InlineAlertComponent } from '../../../shared/components/inline-alert/inline-alert.component';
 
 @Component({
+    standalone: false,
     selector: 'forgot-password',
     templateUrl: 'forgot-password.component.html',
     styleUrls: [

@@ -67,6 +67,7 @@ class InitTag {
     name = '';
 }
 @Component({
+    standalone: false,
     selector: 'artifact-tag',
     templateUrl: './artifact-tag.component.html',
     styleUrls: ['./artifact-tag.component.scss'],

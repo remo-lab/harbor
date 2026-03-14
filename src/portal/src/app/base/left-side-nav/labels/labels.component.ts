@@ -14,6 +14,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'app-labels',
     templateUrl: './labels.component.html',
 })

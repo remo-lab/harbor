@@ -61,6 +61,7 @@ const PAGE_SIZE: number = 100;
 export const KB_TO_MB: number = 1024;
 
 @Component({
+    standalone: false,
     selector: 'hbr-create-edit-rule',
     templateUrl: './create-edit-rule.component.html',
     styleUrls: ['./create-edit-rule.component.scss'],

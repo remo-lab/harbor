@@ -32,6 +32,7 @@ enum LightColors {
 }
 
 @Component({
+    standalone: false,
     selector: 'app-donut-chart',
     templateUrl: './donut-chart.component.html',
     styleUrls: ['./donut-chart.component.scss'],

@@ -11,7 +11,7 @@
             [candidatePermissions]="robotMetadata?.project">
             <button class="btn btn-secondary btn-sm m-0">
                 {{ 'SYSTEM_ROBOT.RESET_PERMISSION' | translate }}
-                <clr-icon size="12" shape="caret down"></clr-icon>
+                <cds-icon size="12" shape="caret down"></cds-icon>
             </button>
         </robot-permissions-panel>
         <button
@@ -54,7 +54,7 @@
                 <button class="btn btn-link btn-sm m-0 p-0">
                     {{ selectedProjectPermissionMap[p.name]?.length || 0 }}
                     {{ 'SYSTEM_ROBOT.PERMISSIONS' | translate }}
-                    <clr-icon shape="caret down"></clr-icon>
+                    <cds-icon shape="caret down"></cds-icon>
                 </button>
             </robot-permissions-panel>
         </clr-dg-cell>

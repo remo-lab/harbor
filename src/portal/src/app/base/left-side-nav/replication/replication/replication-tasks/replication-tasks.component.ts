@@ -47,6 +47,7 @@ const STATUS_MAP = {
 };
 const SUCCEED: string = 'Succeed';
 @Component({
+    standalone: false,
     selector: 'replication-tasks',
     templateUrl: './replication-tasks.component.html',
     styleUrls: ['./replication-tasks.component.scss'],

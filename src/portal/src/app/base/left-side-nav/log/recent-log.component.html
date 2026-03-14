@@ -29,10 +29,10 @@
                 (openFlag)="openFilter($event)"
                 [currentValue]="currentTerm"></hbr-filter>
             <span (click)="refresh()" class="refresh-btn">
-                <clr-icon
+                <cds-icon
                     shape="refresh"
                     [hidden]="inProgress"
-                    ng-disabled="inProgress"></clr-icon>
+                    ng-disabled="inProgress"></cds-icon>
                 <span
                     class="spinner spinner-inline"
                     [hidden]="!inProgress"></span>

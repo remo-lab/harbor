@@ -20,6 +20,7 @@ import { MessageHandlerService } from '../../../shared/services/message-handler.
 import { InlineAlertComponent } from '../../../shared/components/inline-alert/inline-alert.component';
 
 @Component({
+    standalone: false,
     selector: 'new-user-modal',
     templateUrl: 'new-user-modal.component.html',
     styleUrls: ['../../../common.scss', './new-user-madal.component.scss'],

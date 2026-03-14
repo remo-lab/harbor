@@ -33,6 +33,7 @@ import { ProjectWebhookService, VendorType } from '../webhook.service';
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'app-executions',
     templateUrl: './executions.component.html',
     styleUrls: ['./executions.component.scss'],

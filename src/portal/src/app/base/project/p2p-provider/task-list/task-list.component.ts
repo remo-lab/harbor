@@ -40,6 +40,7 @@ import { ClrDatagridStateInterface, ClrLoadingState } from '@clr/angular';
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'task-list',
     templateUrl: './task-list.component.html',
     styleUrls: ['./task-list.component.scss'],

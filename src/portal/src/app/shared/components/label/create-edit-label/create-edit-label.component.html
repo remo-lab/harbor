@@ -17,9 +17,9 @@
                         [(ngModel)]="labelModel.name"
                         #name="ngModel"
                         (keyup)="existValid(labelModel.name)" />
-                    <clr-icon
+                    <cds-icon
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <clr-control-error
                         class="position-ab"
                         *ngIf="isLabelNameExist">
@@ -32,9 +32,9 @@
                 <clr-dropdown
                     [clrCloseMenuOnItemClick]="false"
                     clrDropdownTrigger>
-                    <clr-icon
+                    <cds-icon
                         shape="caret down"
-                        class="btn btn-outline btnColor"></clr-icon>
+                        class="btn btn-outline btnColor"></cds-icon>
                     <clr-dropdown-menu *clrIfOpen>
                         <label
                             class="dropdown-item"

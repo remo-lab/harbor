@@ -19,6 +19,7 @@ import { ErrorHandler } from '../../../../../../shared/units/error-handler';
 import { finalize } from 'rxjs/operators';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-dependencies',
     templateUrl: './dependencies.component.html',
     styleUrls: ['./dependencies.component.scss'],

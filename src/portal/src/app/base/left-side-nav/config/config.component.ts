@@ -15,6 +15,7 @@ import { Component, OnInit } from '@angular/core';
 import { ConfigService } from './config.service';
 
 @Component({
+    standalone: false,
     selector: 'config',
     templateUrl: 'config.component.html',
     styleUrls: ['config.component.scss'],

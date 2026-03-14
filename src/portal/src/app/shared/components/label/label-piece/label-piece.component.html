@@ -11,12 +11,12 @@
         }"
         [style.max-width.px]="labelWidth">
         <span>
-            <clr-icon
+            <cds-icon
                 *ngIf="hasIcon && label.scope === 'p'"
-                shape="organization"></clr-icon>
-            <clr-icon
+                shape="organization"></cds-icon>
+            <cds-icon
                 *ngIf="hasIcon && label.scope === 'g'"
-                shape="administrator"></clr-icon>
+                shape="administrator"></cds-icon>
         </span>
         <span class="label-name">{{ label.name }}</span>
     </label>

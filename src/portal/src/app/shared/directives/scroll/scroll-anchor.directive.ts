@@ -15,6 +15,7 @@ import { ScrollManagerService } from './scroll-manager.service';
 import { Directive, HostListener, Input } from '@angular/core';
 
 @Directive({
+    standalone: false,
     selector: '[appScrollAnchor]',
 })
 export class ScrollAnchorDirective {

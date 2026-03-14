@@ -24,7 +24,7 @@ import { AppConfigService } from './services/app-config.service';
 import { SkinableConfig } from './services/skinable-config.service';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CookieModule } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import {
     MissingTranslationHandler,
     MissingTranslationHandlerParams,
@@ -75,9 +75,9 @@ class MyMissingTranslationHandler implements MissingTranslationHandler {
         BrowserAnimationsModule,
         HttpClientModule,
         HarborRoutingModule,
-        CookieModule.forRoot(),
     ],
     providers: [
+        CookieService,
         AppConfigService,
         SkinableConfig,
         {

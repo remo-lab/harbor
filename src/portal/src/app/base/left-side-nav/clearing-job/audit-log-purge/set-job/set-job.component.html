@@ -57,10 +57,10 @@
             <span class="required font-style flex-200"
                 >{{ 'CLEARANCES.KEEP_IN' | translate
                 }}<clr-tooltip>
-                    <clr-icon
+                    <cds-icon
                         clrTooltipTrigger
                         shape="info-circle"
-                        size="24"></clr-icon>
+                        size="24"></cds-icon>
                     <clr-tooltip-content
                         clrPosition="top-right"
                         clrSize="lg"
@@ -92,9 +92,9 @@
                             pattern="^[\-1-9]{1}[0-9]*$"
                             id="retentionTime"
                             size="20" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                         <clr-control-error
                             class="max-width-2rem"
                             *ngIf="
@@ -143,10 +143,10 @@
             <span class="font-style required flex-200"
                 >{{ 'CLEARANCES.INCLUDED_EVENT_TYPES' | translate
                 }}<clr-tooltip>
-                    <clr-icon
+                    <cds-icon
                         clrTooltipTrigger
                         shape="info-circle"
-                        size="24"></clr-icon>
+                        size="24"></cds-icon>
                     <clr-tooltip-content
                         clrPosition="top-right"
                         clrSize="lg"
@@ -176,9 +176,9 @@
                 <div
                     class="clr-subtext-wrapper"
                     *ngIf="!(selectedEventTypes?.length > 0)">
-                    <clr-icon
+                    <cds-icon
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <span class="clr-subtext">{{
                         'CLEARANCES.INCLUDED_EVENT_TYPE_ERROR' | translate
                     }}</span>

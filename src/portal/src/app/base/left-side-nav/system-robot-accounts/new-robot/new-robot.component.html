@@ -41,10 +41,10 @@
                     <label for="name" class="clr-control-label required"
                         >{{ 'P2P_PROVIDER.NAME' | translate }}
                         <clr-tooltip *ngIf="!isEditMode">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-right"
                                 clrSize="lg"
@@ -77,9 +77,9 @@
                                 name="name"
                                 #name="ngModel"
                                 (keyup)="inputName()" />
-                            <clr-icon
+                            <cds-icon
                                 class="clr-validate-icon"
-                                shape="exclamation-circle"></clr-icon>
+                                shape="exclamation-circle"></cds-icon>
                             <span
                                 class="spinner spinner-inline"
                                 [hidden]="!checkNameOnGoing"></span>
@@ -126,10 +126,10 @@
                     <label class="clr-control-label required"
                         >{{ 'SYSTEM_ROBOT.EXPIRATION_TIME' | translate }}
                         <clr-tooltip>
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-right"
                                 clrSize="lg"
@@ -191,9 +191,9 @@
                                     pattern="^[\-1-9]{1}[0-9]*$"
                                     id="robotTokenExpiration"
                                     size="20" />
-                                <clr-icon
+                                <cds-icon
                                     class="clr-validate-icon"
-                                    shape="exclamation-circle"></clr-icon>
+                                    shape="exclamation-circle"></cds-icon>
                                 <span
                                     class="spinner spinner-inline"
                                     [hidden]="!loadingSystemConfig"></span>
@@ -226,10 +226,10 @@
                                 [ngClass]="{
                                     showWarning: shouldShowWarning()
                                 }">
-                                <clr-icon
+                                <cds-icon
                                     *ngIf="shouldShowWarning()"
                                     class="alert-icon"
-                                    shape="exclamation-triangle"></clr-icon
+                                    shape="exclamation-triangle"></cds-icon
                                 ><span>{{
                                     'SYSTEM_ROBOT.EXPIRES_AT' | translate
                                 }}</span
@@ -286,11 +286,11 @@
                                 [(ngModel)]="coverAll" />
                             <label>
                                 <clr-tooltip>
-                                    <clr-icon
+                                    <cds-icon
                                         class="opacity-07"
                                         clrTooltipTrigger
                                         shape="info-circle"
-                                        size="24"></clr-icon>
+                                        size="24"></cds-icon>
                                     <clr-tooltip-content
                                         clrPosition="bottom-right"
                                         clrSize="lg"

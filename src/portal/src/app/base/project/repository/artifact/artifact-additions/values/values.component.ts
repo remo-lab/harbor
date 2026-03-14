@@ -20,6 +20,7 @@ import { finalize } from 'rxjs/operators';
 import { isObject } from '../../../../../../shared/units/utils';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-values',
     templateUrl: './values.component.html',
     styleUrls: ['./values.component.scss'],

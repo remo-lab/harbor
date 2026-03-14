@@ -25,6 +25,7 @@ import {
 import ListAuditLogExtsParams = AuditlogService.ListAuditLogExtsParams;
 
 @Component({
+    standalone: false,
     selector: 'hbr-audit-log',
     templateUrl: './audit-log.component.html',
     styleUrls: ['./audit-log.component.scss'],

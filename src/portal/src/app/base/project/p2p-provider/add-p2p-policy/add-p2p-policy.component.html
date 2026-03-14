@@ -109,9 +109,9 @@
                                     #name="ngModel"
                                     required
                                     (input)="inputName()" />
-                                <clr-icon
+                                <cds-icon
                                     class="clr-validate-icon"
-                                    shape="exclamation-circle"></clr-icon>
+                                    shape="exclamation-circle"></cds-icon>
                                 <span
                                     class="spinner spinner-inline"
                                     [hidden]="!checkNameOnGoing"></span>
@@ -194,9 +194,9 @@
                                     name="repo"
                                     #repo="ngModel"
                                     required />
-                                <clr-icon
+                                <cds-icon
                                     class="clr-validate-icon"
-                                    shape="exclamation-circle"></clr-icon>
+                                    shape="exclamation-circle"></cds-icon>
                             </div>
                             <clr-control-helper
                                 class="margin-left-90px opacity-08"
@@ -241,9 +241,9 @@
                                     name="tag"
                                     #tag="ngModel"
                                     required />
-                                <clr-icon
+                                <cds-icon
                                     class="clr-validate-icon"
-                                    shape="exclamation-circle"></clr-icon>
+                                    shape="exclamation-circle"></cds-icon>
                             </div>
                             <clr-control-helper
                                 class="margin-left-90px opacity-08"
@@ -280,9 +280,9 @@
                                     [(ngModel)]="labels"
                                     size="30"
                                     name="label" />
-                                <clr-icon
+                                <cds-icon
                                     class="clr-validate-icon"
-                                    shape="exclamation-circle"></clr-icon>
+                                    shape="exclamation-circle"></cds-icon>
                             </div>
                         </div>
                     </div>
@@ -294,11 +294,11 @@
                                 'P2P_PROVIDER.CRITERIA' | translate
                             }}</span>
                             <clr-tooltip>
-                                <clr-icon
+                                <cds-icon
                                     class="cri-tooltip"
                                     clrTooltipTrigger
                                     shape="info-circle"
-                                    size="24"></clr-icon>
+                                    size="24"></cds-icon>
                                 <clr-tooltip-content
                                     clrPosition="top-left"
                                     clrSize="lg"
@@ -338,11 +338,11 @@
                                     'P2P_PROVIDER.CRITERIA' | translate
                                 }}</span>
                                 <clr-tooltip>
-                                    <clr-icon
+                                    <cds-icon
                                         class="tooltip"
                                         clrTooltipTrigger
                                         shape="info-circle"
-                                        size="24"></clr-icon>
+                                        size="24"></cds-icon>
                                     <clr-tooltip-content
                                         clrPosition="top-left"
                                         clrSize="lg"
@@ -408,10 +408,10 @@
                             </select>
                         </clr-select-container>
                         <clr-tooltip *ngIf="showExplainForEventBased()">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-right"
                                 clrSize="lg"

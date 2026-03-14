@@ -27,6 +27,7 @@ enum Types {
 }
 
 @Component({
+    standalone: false,
     selector: 'artifact-common-properties',
     templateUrl: './artifact-common-properties.component.html',
     styleUrls: ['./artifact-common-properties.component.scss'],

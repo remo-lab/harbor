@@ -20,6 +20,7 @@ import { FilesItem } from 'src/app/shared/services/interface';
 import { formatSize } from 'src/app/shared/units/utils';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-files',
     templateUrl: './files.component.html',
     styleUrls: ['./files.component.scss'],

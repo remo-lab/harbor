@@ -58,6 +58,7 @@ import { ProjectMemberEntity } from '../../../../../ng-swagger-gen/models/projec
 import { AddGroupComponent } from './add-group/add-group.component';
 
 @Component({
+    standalone: false,
     templateUrl: 'member.component.html',
     styleUrls: ['./member.component.scss'],
 })

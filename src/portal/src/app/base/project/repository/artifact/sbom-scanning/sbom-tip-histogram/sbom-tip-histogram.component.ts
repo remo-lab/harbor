@@ -32,6 +32,7 @@ const SEC_STR = 'sec';
 const SUCCESS_PCT: number = 100;
 
 @Component({
+    standalone: false,
     selector: 'hbr-sbom-tip-histogram',
     templateUrl: './sbom-tip-histogram.component.html',
     styleUrls: ['./sbom-tip-histogram.component.scss'],

@@ -146,7 +146,7 @@
     <h3 class="modal-title">{{ 'SCANNER.SELECT_SCANNER' | translate }}</h3>
     <div class="modal-body body-format">
         <inline-alert class="modal-title"></inline-alert>
-        <clr-datagrid [(clrDgSingleSelected)]="selectedScanner">
+        <clr-datagrid [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedScanner">
             <clr-dg-column [clrDgField]="'name'">{{
                 'SCANNER.NAME' | translate
             }}</clr-dg-column>

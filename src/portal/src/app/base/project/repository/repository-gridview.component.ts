@@ -86,6 +86,7 @@ import {
 } from '../../../services/event-service/event.service';
 
 @Component({
+    standalone: false,
     selector: 'hbr-repository-gridview',
     templateUrl: './repository-gridview.component.html',
     styleUrls: ['./repository-gridview.component.scss'],

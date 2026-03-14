@@ -45,6 +45,7 @@ export function maxLengthExtValidator(length: number): ValidatorFn {
 }
 
 @Directive({
+    standalone: false,
     selector: '[maxLengthExt]',
     providers: [
         {

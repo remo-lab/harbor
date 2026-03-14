@@ -62,6 +62,7 @@ export class SearchOption {
 }
 
 @Component({
+    standalone: false,
     selector: 'project-audit-legacy-log',
     templateUrl: './audit-legacy-log.component.html',
     styleUrls: ['./audit-legacy-log.component.scss'],

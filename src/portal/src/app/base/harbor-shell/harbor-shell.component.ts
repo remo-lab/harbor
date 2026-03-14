@@ -46,6 +46,7 @@ import {
 const HAS_STYLE_MODE: string = 'styleModeLocal';
 
 @Component({
+    standalone: false,
     selector: 'harbor-shell',
     templateUrl: 'harbor-shell.component.html',
     styleUrls: ['harbor-shell.component.scss'],

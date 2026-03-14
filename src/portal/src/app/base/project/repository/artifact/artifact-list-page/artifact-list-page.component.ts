@@ -18,6 +18,7 @@ import { ArtifactListPageService } from './artifact-list-page.service';
 import { Subscription } from 'rxjs';
 
 @Component({
+    standalone: false,
     selector: 'artifact-list-page',
     templateUrl: 'artifact-list-page.component.html',
     styleUrls: ['./artifact-list-page.component.scss'],

@@ -95,7 +95,7 @@
                         (targetEndpoint.dirty || targetEndpoint.touched)
                     ">
                     <div class="clr-input-wrapper position-relative">
-                        <clr-icon
+                        <cds-icon
                             *ngIf="
                                 !(
                                     !showEndpointList &&
@@ -108,7 +108,7 @@
                             class="down"
                             shape="caret"
                             dir="down"
-                            (click)="showEndpointList = true"></clr-icon>
+                            (click)="showEndpointList = true"></cds-icon>
                         <input
                             autocomplete="off"
                             (blur)="blur()"
@@ -137,7 +137,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <clr-icon
+                        <cds-icon
                             *ngIf="
                                 !showEndpointList &&
                                 targetEndpoint?.errors &&
@@ -145,7 +145,7 @@
                                 (targetEndpoint.dirty || targetEndpoint.touched)
                             "
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error
                         *ngIf="
@@ -219,10 +219,10 @@
                     for="destination_insecure"
                     ><span>{{ 'CONFIG.VERIFY_REMOTE_CERT' | translate }}</span>
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="top-right"
                             clrSize="md"
@@ -250,10 +250,10 @@
                 <label>
                     <span>{{ 'DESTINATION.CA_CERTIFICATE' | translate }}</span>
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="top-right"
                             clrSize="lg"

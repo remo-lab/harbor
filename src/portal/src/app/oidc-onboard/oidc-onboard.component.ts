@@ -19,6 +19,7 @@ import { CommonRoutes } from '../shared/entities/shared.const';
 import { errorHandler } from '../shared/units/shared.utils';
 
 @Component({
+    standalone: false,
     selector: 'app-oidc-onboard',
     templateUrl: './oidc-onboard.component.html',
     styleUrls: ['./oidc-onboard.component.scss'],

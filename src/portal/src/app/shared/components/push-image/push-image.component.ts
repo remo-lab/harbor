@@ -16,6 +16,7 @@ import { CopyInputComponent } from './copy-input.component';
 import { InlineAlertComponent } from '../inline-alert/inline-alert.component';
 
 @Component({
+    standalone: false,
     selector: 'hbr-push-image-button',
     templateUrl: './push-image.component.html',
     styleUrls: ['./push-image.scss'],

@@ -33,6 +33,7 @@ import { UserService } from 'ng-swagger-gen/services/user.service';
 import { AppConfigService } from '../../services/app-config.service';
 
 @Component({
+    standalone: false,
     selector: 'account-settings-modal',
     templateUrl: 'account-settings-modal.component.html',
     styleUrls: ['./account-settings-modal.component.scss', '../../common.scss'],

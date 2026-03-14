@@ -45,6 +45,7 @@ import { AuditlogService } from 'ng-swagger-gen/services';
 import { AuditLogEventType } from 'ng-swagger-gen/models';
 
 @Component({
+    standalone: false,
     selector: 'system-settings',
     templateUrl: './system-settings.component.html',
     styleUrls: ['./system-settings.component.scss'],

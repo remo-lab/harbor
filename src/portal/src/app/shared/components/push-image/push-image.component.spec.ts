@@ -68,6 +68,7 @@ describe('PushImageButtonComponent (inline template)', () => {
 
 // mock a TestHostComponent for PushImageButtonComponent
 @Component({
+    standalone: false,
     template: ` <hbr-push-image-button
         [projectName]="'testing'"
         [registryUrl]="'https://testing.harbor.com'">

@@ -33,6 +33,7 @@ import { errorHandler } from '../../../../shared/units/shared.utils';
 import { JobServiceDashboardSharedDataService } from '../job-service-dashboard-shared-data.service';
 
 @Component({
+    standalone: false,
     selector: 'app-worker-card',
     templateUrl: './worker-card.component.html',
     styleUrls: ['./worker-card.component.scss'],

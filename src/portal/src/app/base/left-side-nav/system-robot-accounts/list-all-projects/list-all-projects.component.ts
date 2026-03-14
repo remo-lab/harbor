@@ -27,6 +27,7 @@ import { Permissions } from '../../../../../../ng-swagger-gen/models/permissions
 const FIRST_PROJECTS_PAGE_SIZE: number = 100;
 
 @Component({
+    standalone: false,
     selector: 'app-list-all-projects',
     templateUrl: './list-all-projects.component.html',
     styleUrls: ['./list-all-projects.component.scss'],

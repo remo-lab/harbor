@@ -32,6 +32,7 @@ import { Task } from 'ng-swagger-gen/models/task';
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'app-tasks',
     templateUrl: './tasks.component.html',
     styleUrls: ['./tasks.component.scss'],

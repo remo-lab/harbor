@@ -14,6 +14,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'job-service-dashboard',
     templateUrl: 'job-service-dashboard.component.html',
     styleUrls: ['job-service-dashboard.component.scss'],

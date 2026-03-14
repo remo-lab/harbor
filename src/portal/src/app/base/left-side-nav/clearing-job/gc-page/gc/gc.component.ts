@@ -30,6 +30,7 @@ import { clone } from '../../../../../shared/units/utils';
 const ONE_MINUTE = 60000;
 
 @Component({
+    standalone: false,
     selector: 'gc-config',
     templateUrl: './gc.component.html',
     styleUrls: ['./gc.component.scss'],

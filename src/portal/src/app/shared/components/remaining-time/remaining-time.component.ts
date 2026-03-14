@@ -26,6 +26,7 @@ const DAY: number = 1000 * 60 * 60 * 24;
 const HOUR: number = 1000 * 60 * 60;
 const WARNING_DAYS = 7;
 @Component({
+    standalone: false,
     selector: 'app-remaining-time',
     templateUrl: 'remaining-time.component.html',
     styleUrls: ['./remaining-time.component.scss'],

@@ -24,9 +24,9 @@
                             pattern="^[a-z0-9]+(?:[._\-][a-z0-9]+)*$"
                             #projectName
                             autocomplete="off" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                         <span
                             class="spinner spinner-inline"
                             [hidden]="!checkOnGoing"></span>
@@ -44,10 +44,10 @@
                 <label class="form-group-label-override"
                     >{{ 'PROJECT.ACCESS_LEVEL' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="bottom-left"
                             clrSize="lg"
@@ -74,10 +74,10 @@
                     class="required clr-control-label"
                     >{{ 'PROJECT.STORAGE_QUOTA' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="bottom-left"
                             clrSize="lg"
@@ -104,9 +104,9 @@
                         class="mr-10 clr-input width-182"
                         #projectStorageLimit="ngModel"
                         autocomplete="off" />
-                    <clr-icon
+                    <cds-icon
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <div class="clr-select-wrapper">
                         <select
                             id="create_project_storage_limit_unit"
@@ -141,10 +141,10 @@
                     class="clr-control-label"
                     >{{ 'PROJECT.PROXY_CACHE' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="bottom-left"
                             clrSize="lg"
@@ -232,10 +232,10 @@
                 <label for="bandwidth" class="clr-control-label required">
                     {{ 'PROJECT.BANDWIDTH' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="bottom-left"
                             clrSize="lg"
@@ -258,10 +258,10 @@
                         placeholder="Enter bandwidth"
                         autocomplete="off"
                         (ngModelChange)="validateBandwidth()" />
-                    <clr-icon
+                    <cds-icon
                         *ngIf="bandwidthError"
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <div class="clr-select-wrapper mr-10">
                         <select
                             id="bandwidth_unit"
@@ -289,10 +289,10 @@
                 <label for="maxUpStreamConn" class="clr-control-label required">
                     {{ 'PROJECT.CONNECTION_LIMIT' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="bottom-left"
                             clrSize="lg"
@@ -316,10 +316,10 @@
                         placeholder="Enter upstream connection limit"
                         autocomplete="off"
                         (ngModelChange)="validateMaxUpstreamConnections()" />
-                    <clr-icon
+                    <cds-icon
                         *ngIf="maxUpstreamConnError"
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <clr-control-error
                         *ngIf="maxUpstreamConnError"
                         class="tooltip-content">
@@ -337,10 +337,10 @@
                 <label class="clr-control-label">
                     {{ 'PROJECT.PROXY_CACHE_LOCAL_ON_NOT_FOUND' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="bottom-left"
                             clrSize="lg"

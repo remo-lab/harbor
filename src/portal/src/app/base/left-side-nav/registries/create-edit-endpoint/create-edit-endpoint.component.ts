@@ -43,6 +43,7 @@ const FAKE_JSON_KEY = 'No Change';
 const METADATA_URL = CURRENT_BASE_HREF + '/replication/adapterinfos';
 const FIXED_PATTERN_TYPE: string = 'EndpointPatternTypeFix';
 @Component({
+    standalone: false,
     selector: 'hbr-create-edit-endpoint',
     templateUrl: './create-edit-endpoint.component.html',
     styleUrls: ['./create-edit-endpoint.component.scss'],

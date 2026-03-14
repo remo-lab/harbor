@@ -25,6 +25,7 @@ import { ProjectService } from 'ng-swagger-gen/services/project.service';
 import { Project } from 'ng-swagger-gen/models/project';
 
 @Component({
+    standalone: false,
     selector: 'hbr-image-name-input',
     templateUrl: './image-name-input.component.html',
     styleUrls: ['./image-name-input.component.scss'],

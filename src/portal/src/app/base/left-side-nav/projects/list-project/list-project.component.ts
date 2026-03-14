@@ -64,6 +64,7 @@ import { ExportCveComponent } from './export-cve/export-cve.component';
 const MAX_PROJECTS_NUM: number = 1;
 const INTERVAL: number = 30000;
 @Component({
+    standalone: false,
     selector: 'list-project',
     templateUrl: 'list-project.component.html',
 })

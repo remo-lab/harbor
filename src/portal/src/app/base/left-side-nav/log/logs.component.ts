@@ -14,6 +14,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'app-logs',
     templateUrl: './logs.component.html',
     styleUrls: ['./logs.component.scss'],

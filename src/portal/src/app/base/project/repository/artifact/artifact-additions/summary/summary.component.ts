@@ -19,6 +19,7 @@ import { finalize } from 'rxjs/operators';
 import { Artifact } from 'ng-swagger-gen/models/artifact';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-summary',
     templateUrl: './summary.component.html',
     styleUrls: ['./summary.component.scss'],

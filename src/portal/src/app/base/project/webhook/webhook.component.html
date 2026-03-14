@@ -3,8 +3,8 @@
     <clr-datagrid
         (clrDgRefresh)="getWebhooks($event)"
         [clrDgLoading]="loadingWebhookList"
-        [(clrDgSingleSelected)]="selectedRow"
-        (clrDgSingleSelectedChange)="refreshExecutions($event)">
+        [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedRow"
+        (clrDgSelectedChange)="refreshExecutions($event)">
         <clr-dg-action-bar>
             <div class="clr-row">
                 <div class="clr-col-7">
@@ -15,7 +15,7 @@
                         type="button"
                         class="btn btn-secondary"
                         (click)="newWebhook()">
-                        <clr-icon shape="plus" size="16"></clr-icon>
+                        <cds-icon shape="plus" size="16"></cds-icon>
                         {{ 'WEBHOOK.NEW_WEBHOOK' | translate }}
                     </button>
                     <clr-dropdown
@@ -24,9 +24,9 @@
                         clrDropdownTrigger>
                         <span id="action-webhook"
                             >{{ 'MEMBER.ACTION' | translate }}
-                            <clr-icon
+                            <cds-icon
                                 class="clr-icon"
-                                shape="caret down"></clr-icon
+                                shape="caret down"></cds-icon
                         ></span>
                         <clr-dropdown-menu *clrIfOpen>
                             <button
@@ -40,10 +40,10 @@
                                         *ngIf="
                                             selectedRow && !selectedRow.enabled
                                         ">
-                                        <clr-icon
+                                        <cds-icon
                                             class="margin-top-2"
                                             size="16"
-                                            shape="success-standard"></clr-icon>
+                                            shape="success-standard"></cds-icon>
                                         <span class="margin-left-10">{{
                                             'WEBHOOK.ENABLED_BUTTON' | translate
                                         }}</span>
@@ -55,10 +55,10 @@
                                                 !selectedRow.enabled
                                             )
                                         ">
-                                        <clr-icon
+                                        <cds-icon
                                             class="margin-top-2"
                                             size="16"
-                                            shape="ban"></clr-icon>
+                                            shape="ban"></cds-icon>
                                         <span class="margin-left-10">{{
                                             'WEBHOOK.DISABLED_BUTTON'
                                                 | translate
@@ -73,10 +73,10 @@
                                 [disabled]="
                                     !selectedRow || !hasUpdatePermission
                                 ">
-                                <clr-icon
+                                <cds-icon
                                     class="margin-top-0"
                                     size="16"
-                                    shape="pencil"></clr-icon>
+                                    shape="pencil"></cds-icon>
                                 <span
                                     id="edit-webhook"
                                     class="margin-left-10"
@@ -91,10 +91,10 @@
                                 [disabled]="
                                     !selectedRow || !hasUpdatePermission
                                 ">
-                                <clr-icon
+                                <cds-icon
                                     class="margin-top-0"
                                     size="16"
-                                    shape="times"></clr-icon>
+                                    shape="times"></cds-icon>
                                 <span
                                     id="delete-webhook"
                                     class="margin-left-10"
@@ -107,12 +107,12 @@
                 <div class="clr-col-5">
                     <div class="action-head-pos">
                         <span class="refresh-btn">
-                            <clr-icon
+                            <cds-icon
                                 shape="refresh"
                                 (click)="refresh()"
                                 [hidden]="
                                     loadingWebhookList || loadingMetadata
-                                "></clr-icon>
+                                "></cds-icon>
                         </span>
                     </div>
                 </div>
@@ -143,17 +143,17 @@
             <clr-dg-cell>{{ w.name }}</clr-dg-cell>
             <clr-dg-cell [ngSwitch]="w.enabled">
                 <div *ngSwitchCase="true" class="icon-wrap">
-                    <clr-icon
+                    <cds-icon
                         shape="check-circle"
                         size="20"
-                        class="is-success enabled-icon"></clr-icon>
+                        class="is-success enabled-icon"></cds-icon>
                     <span>{{ 'WEBHOOK.ENABLED' | translate }}</span>
                 </div>
                 <div *ngSwitchCase="false" class="icon-wrap">
-                    <clr-icon
+                    <cds-icon
                         shape="exclamation-triangle"
                         size="20"
-                        class="is-warning"></clr-icon>
+                        class="is-warning"></cds-icon>
                     <span>{{ 'WEBHOOK.DISABLED' | translate }}</span>
                 </div>
             </clr-dg-cell>

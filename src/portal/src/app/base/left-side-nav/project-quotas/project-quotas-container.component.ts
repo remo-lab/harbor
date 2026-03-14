@@ -19,6 +19,7 @@ import { finalize } from 'rxjs/operators';
 import { Configuration } from '../config/config';
 
 @Component({
+    standalone: false,
     selector: 'app-project-quotas',
     templateUrl: './project-quotas-container.component.html',
     styleUrls: ['./project-quotas-container.component.scss'],

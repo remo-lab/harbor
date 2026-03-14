@@ -30,6 +30,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { ScrollPosition } from '../../../../shared/services';
 
 @Component({
+    standalone: false,
     selector: 'hbr-gridview',
     templateUrl: './grid-view.component.html',
     styleUrls: ['./grid-view.component.scss'],

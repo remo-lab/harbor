@@ -49,6 +49,7 @@ import {
 } from '../../../../../../shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-sbom',
     templateUrl: './artifact-sbom.component.html',
     styleUrls: ['./artifact-sbom.component.scss'],

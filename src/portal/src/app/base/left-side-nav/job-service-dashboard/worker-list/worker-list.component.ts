@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ClrDatagridStateInterface } from '@clr/angular/data/datagrid/interfaces/state.interface';
+import { ClrDatagridStateInterface } from '@clr/angular/data/datagrid';
 import { Worker } from 'ng-swagger-gen/models';
 import { WorkerPool } from 'ng-swagger-gen/models/worker-pool';
 import { JobserviceService } from 'ng-swagger-gen/services';
@@ -42,6 +42,7 @@ import { errorHandler } from '../../../../shared/units/shared.utils';
 import { JobServiceDashboardSharedDataService } from '../job-service-dashboard-shared-data.service';
 
 @Component({
+    standalone: false,
     selector: 'app-worker-list',
     templateUrl: './worker-list.component.html',
     styleUrls: ['./worker-list.component.scss'],

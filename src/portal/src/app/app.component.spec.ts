@@ -14,7 +14,7 @@
 
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { Title } from '@angular/platform-browser';
-import { CookieService } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SessionService } from './shared/services/session.service';
 import { AppConfigService } from './services/app-config.service';

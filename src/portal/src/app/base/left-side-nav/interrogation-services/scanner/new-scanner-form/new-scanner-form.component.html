@@ -13,9 +13,9 @@
                         class="clr-input width-280"
                         type="text"
                         id="scanner-name" />
-                    <clr-icon
+                    <cds-icon
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <span
                         class="spinner spinner-inline"
                         [hidden]="!checkOnGoing"></span>
@@ -57,9 +57,9 @@
                         class="clr-input width-280"
                         type="text"
                         id="scanner-endpoint" />
-                    <clr-icon
+                    <cds-icon
                         class="clr-validate-icon"
-                        shape="exclamation-circle"></clr-icon>
+                        shape="exclamation-circle"></cds-icon>
                     <span
                         class="spinner spinner-inline"
                         [hidden]="!checkEndpointOnGoing"></span>
@@ -113,9 +113,9 @@
                             class="clr-input width-280"
                             type="text"
                             id="scanner-username" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error *ngIf="!isUserNameValid">
                         {{ 'SCANNER.USERNAME_REQUIRED' | translate }}
@@ -136,9 +136,9 @@
                             class="clr-input width-280"
                             type="password"
                             id="scanner-password" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error *ngIf="!isPasswordValid">
                         <span id="pwd-error">{{
@@ -161,9 +161,9 @@
                             class="clr-input width-280"
                             type="text"
                             id="scanner-token" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error *ngIf="!isTokenValid">
                         {{ 'SCANNER.TOKEN_REQUIRED' | translate }}
@@ -184,9 +184,9 @@
                             class="clr-input width-280"
                             type="text"
                             id="scanner-apiKey" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error *ngIf="!isApiKeyValid">
                         {{ 'SCANNER.API_KEY_REQUIRED' | translate }}
@@ -209,11 +209,11 @@
                     <label for="scanner-skipCertVerify"
                         >{{ 'SCANNER.SKIP' | translate }}
                         <clr-tooltip>
-                            <clr-icon
+                            <cds-icon
                                 class="color-57"
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-left"
                                 clrSize="md"
@@ -233,11 +233,11 @@
                     <label for="scanner-use-inner"
                         >{{ 'SCANNER.USE_INNER' | translate }}
                         <clr-tooltip>
-                            <clr-icon
+                            <cds-icon
                                 class="color-57"
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-left"
                                 clrSize="md"

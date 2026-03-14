@@ -40,6 +40,7 @@ const CVE_DETAIL_PRE_URL = `https://nvd.nist.gov/vuln/detail/`;
 const TARGET_BLANK = '_blank';
 
 @Component({
+    standalone: false,
     selector: 'app-security',
     templateUrl: './security.component.html',
     styleUrls: ['./security.component.scss'],

@@ -15,7 +15,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SignInComponent } from './sign-in.component';
 import { AppConfigService } from '../../services/app-config.service';
 import { SessionService } from '../../shared/services/session.service';
-import { CookieService } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { SkinableConfig } from '../../services/skinable-config.service';
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { of } from 'rxjs';
@@ -105,7 +105,7 @@ describe('SignInComponent', () => {
 
     it('should show core service is not available', async () => {
         expect(component).toBeTruthy();
-        const sessionService = TestBed.get<SessionService>(SessionService);
+        const sessionService = TestBed.inject<SessionService>(SessionService);
         const spy: jasmine.Spy = spyOn(
             sessionService,
             'signIn'
@@ -129,7 +129,7 @@ describe('SignInComponent', () => {
     });
     it('should show invalid username or password', async () => {
         expect(component).toBeTruthy();
-        const sessionService = TestBed.get<SessionService>(SessionService);
+        const sessionService = TestBed.inject<SessionService>(SessionService);
         const spy: jasmine.Spy = spyOn(
             sessionService,
             'signIn'

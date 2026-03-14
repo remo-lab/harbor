@@ -23,6 +23,7 @@ import { ConfirmationAcknowledgement } from '../../../base/global-confirmation-d
 import { BatchInfo } from '../../../base/global-confirmation-dialog/confirmation-batch-message';
 
 @Component({
+    standalone: false,
     selector: 'confirmation-dialog',
     templateUrl: './confirmation-dialog.component.html',
     styleUrls: ['./confirmation-dialog.component.scss'],

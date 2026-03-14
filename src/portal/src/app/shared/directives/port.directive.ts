@@ -42,6 +42,7 @@ export function portValidator(): ValidatorFn {
 }
 
 @Directive({
+    standalone: false,
     selector: '[port]',
     providers: [
         {

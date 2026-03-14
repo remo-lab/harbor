@@ -16,6 +16,7 @@ import { AppConfigService } from '../../../services/app-config.service';
 import { SkinableConfig } from '../../../services/skinable-config.service';
 
 @Component({
+    standalone: false,
     selector: 'about-dialog',
     templateUrl: 'about-dialog.component.html',
     styleUrls: ['about-dialog.component.scss'],

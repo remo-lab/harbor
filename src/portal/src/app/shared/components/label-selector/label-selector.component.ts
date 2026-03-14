@@ -39,6 +39,7 @@ const PROJECT: string = 'p';
 const PAGE_SIZE: number = 50;
 
 @Component({
+    standalone: false,
     selector: 'app-label-selector',
     templateUrl: './label-selector.component.html',
     styleUrls: ['./label-selector.component.scss'],

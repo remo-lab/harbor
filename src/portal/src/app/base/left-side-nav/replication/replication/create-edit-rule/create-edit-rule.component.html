@@ -33,9 +33,9 @@
                             #ruleName
                             (keyup)="checkRuleName()"
                             autocomplete="off" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                         <span
                             class="spinner spinner-inline spinner-pos"
                             [hidden]="!inNameChecking"></span>
@@ -78,10 +78,10 @@
                     <label for="push_base"
                         >Push-based
                         <clr-tooltip class="mode-tooltip">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-left"
                                 clrSize="md"
@@ -107,10 +107,10 @@
                     <label for="pull_base"
                         >Pull-based
                         <clr-tooltip class="mode-tooltip">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-left"
                                 clrSize="md"
@@ -285,12 +285,12 @@
                                             standalone: true
                                         }" />
                                     <clr-dropdown>
-                                        <clr-icon
+                                        <cds-icon
                                             class="down"
                                             clrDropdownTrigger
                                             shape="caret"
                                             dir="down">
-                                        </clr-icon>
+                                        </cds-icon>
                                         <clr-dropdown-menu
                                             [ngStyle]="{ 'max-height.px': 230 }"
                                             class="right-align"
@@ -305,13 +305,13 @@
                                                 (click)="
                                                     stickLabel(value.name)
                                                 ">
-                                                <clr-icon
+                                                <cds-icon
                                                     shape="check"
                                                     [style.visibility]="
                                                         isSelect(value.name)
                                                             ? 'visible'
                                                             : 'hidden'
-                                                    "></clr-icon>
+                                                    "></cds-icon>
                                                 <hbr-label-piece
                                                     [label]="value"
                                                     [labelWidth]="
@@ -350,10 +350,10 @@
                                 <span>{{ supportedFilters[i]?.values }}</span>
                             </div>
                             <clr-tooltip>
-                                <clr-icon
+                                <cds-icon
                                     clrTooltipTrigger
                                     shape="info-circle"
-                                    size="24"></clr-icon>
+                                    size="24"></cds-icon>
                                 <clr-tooltip-content
                                     clrPosition="top-left"
                                     clrSize="md"
@@ -464,10 +464,10 @@
                             pattern="^[a-z0-9]+(?:[/._-][a-z0-9]+)*$"
                             maxlength="255" />
                         <clr-tooltip class="des-tooltip">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-left"
                                 clrSize="lg"
@@ -518,10 +518,10 @@
                             </option>
                         </select>
                         <clr-tooltip class="des-tooltip">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 class="flatten"
                                 clrPosition="top-left"
@@ -620,10 +620,10 @@
                                             class="form-control cron-input clr-input"
                                             formControlName="cron" />
                                         <clr-tooltip class="des-tooltip">
-                                            <clr-icon
+                                            <cds-icon
                                                 clrTooltipTrigger
                                                 shape="info-circle"
-                                                size="24"></clr-icon>
+                                                size="24"></cds-icon>
                                             <clr-tooltip-content
                                                 class="flatten"
                                                 clrPosition="top-left"
@@ -660,10 +660,10 @@
                                 'REPLICATION.DELETE_REMOTE_IMAGES' | translate
                             }}
                             <clr-tooltip>
-                                <clr-icon
+                                <cds-icon
                                     clrTooltipTrigger
                                     shape="info-circle"
-                                    size="24"></clr-icon>
+                                    size="24"></cds-icon>
                                 <clr-tooltip-content
                                     clrPosition="top-left"
                                     clrSize="lg"
@@ -703,9 +703,9 @@
                             required
                             pattern="(^-1$)|(^([1-9]+)([0-9]+)*$)"
                             maxlength="5" />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <div
                         class="clr-select-wrapper unit-select"
@@ -727,10 +727,10 @@
                             </option>
                         </select>
                         <clr-tooltip class="ml-10px">
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="top-left"
                                 clrSize="lg"
@@ -772,10 +772,10 @@
                         <label for="overridePolicy" class="clr-control-label"
                             >{{ 'REPLICATION.OVERRIDE_INFO' | translate }}
                             <clr-tooltip class="override-tooltip">
-                                <clr-icon
+                                <cds-icon
                                     clrTooltipTrigger
                                     shape="info-circle"
-                                    size="24"></clr-icon>
+                                    size="24"></cds-icon>
                                 <clr-tooltip-content
                                     clrPosition="top-left"
                                     clrSize="md"
@@ -798,10 +798,10 @@
                         <label for="by-chunk" class="clr-control-label"
                             >{{ 'REPLICATION.COPY_BY_CHUNK' | translate }}
                             <clr-tooltip class="override-tooltip">
-                                <clr-icon
+                                <cds-icon
                                     clrTooltipTrigger
                                     shape="info-circle"
-                                    size="24"></clr-icon>
+                                    size="24"></cds-icon>
                                 <clr-tooltip-content
                                     clrPosition="top-left"
                                     clrSize="md"
@@ -842,10 +842,10 @@
                                     | translate
                             }}
                             <clr-tooltip class="override-tooltip">
-                                <clr-icon
+                                <cds-icon
                                     clrTooltipTrigger
                                     shape="info-circle"
-                                    size="24"></clr-icon>
+                                    size="24"></cds-icon>
                                 <clr-tooltip-content
                                     clrPosition="top-left"
                                     clrSize="md"

@@ -18,6 +18,7 @@ import { SessionUser } from '../../../shared/entities/session-user';
 import { Project } from '../project';
 
 @Component({
+    standalone: false,
     selector: 'app-project-config',
     templateUrl: './project-config.component.html',
     styleUrls: ['./project-config.component.scss'],

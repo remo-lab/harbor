@@ -29,7 +29,7 @@
                             )
                         "
                         (click)="scanNow()">
-                        <clr-icon shape="shield-check" size="16"></clr-icon
+                        <cds-icon shape="shield-check" size="16"></cds-icon
                         >&nbsp;
                         <span>{{ 'VULNERABILITY.SCAN_NOW' | translate }}</span>
                     </button>
@@ -48,7 +48,7 @@
                             )
                         "
                         (click)="generateSbom()">
-                        <clr-icon shape="sbom" size="16"></clr-icon>&nbsp;
+                        <cds-icon shape="sbom" size="16"></cds-icon>&nbsp;
                         <span>{{ 'SBOM.GENERATE' | translate }}</span>
                     </button>
 
@@ -58,7 +58,7 @@
                             id="artifact-list-action"
                             class="btn pl-0">
                             {{ 'BUTTON.ACTIONS' | translate }}
-                            <clr-icon shape="caret down"></clr-icon>
+                            <cds-icon shape="caret down"></cds-icon>
                         </span>
                         <clr-dropdown-menu
                             class="action-dropdown"
@@ -185,7 +185,7 @@
                         (filterEvent)="filterEvent($event)"
                         [projectId]="projectId"></app-artifact-filter>
                     <span class="refresh-btn" (click)="refresh()">
-                        <clr-icon shape="refresh"></clr-icon>
+                        <cds-icon shape="refresh"></cds-icon>
                     </span>
                 </div>
             </clr-dg-action-bar>
@@ -283,10 +283,10 @@
                                     <a
                                         href="javascript:void(0)"
                                         (click)="goIntoIndexArtifact(artifact)">
-                                        <clr-icon
+                                        <cds-icon
                                             size="24"
                                             class="icon-folder"
-                                            shape="folder"></clr-icon>
+                                            shape="folder"></cds-icon>
                                     </a>
                                 </div>
                             </div>
@@ -406,16 +406,16 @@
                     <span
                         *ngIf="artifact.signed === 'checking'"
                         class="spinner spinner-inline ml-2"></span>
-                    <clr-icon
+                    <cds-icon
                         shape="check-circle"
                         *ngIf="artifact.signed === 'true'"
                         size="20"
-                        class="signed"></clr-icon>
-                    <clr-icon
+                        class="signed"></cds-icon>
+                    <cds-icon
                         shape="times-circle"
                         *ngIf="artifact.signed === 'false'"
                         size="16"
-                        class="color-red"></clr-icon>
+                        class="color-red"></cds-icon>
                 </clr-dg-cell>
                 <clr-dg-cell>
                     <div class="cell">

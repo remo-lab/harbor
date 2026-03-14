@@ -24,6 +24,7 @@ import { ConfirmationDialogService } from './confirmation-dialog.service';
 import { ConfirmationAcknowledgement } from './confirmation-state-message';
 
 @Component({
+    standalone: false,
     selector: 'global-confirmation-dialog',
     templateUrl: 'global-confirmation-dialog.component.html',
     styleUrls: ['global-confirmation-dialog.component.scss'],

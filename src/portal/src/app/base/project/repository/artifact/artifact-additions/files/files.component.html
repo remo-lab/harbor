@@ -10,7 +10,7 @@
                     [(clrExpanded)]="file.expanded">
                     <div class="file">
                         <div>
-                            <clr-icon
+                            <cds-icon
                                 size="20"
                                 solid
                                 [attr.shape]="
@@ -19,7 +19,7 @@
                                             ? 'folder-open'
                                             : 'folder'
                                         : 'file'
-                                "></clr-icon>
+                                "></cds-icon>
                             {{ file.name }}
                         </div>
                         <div *ngIf="file.size === 0 || file.size">

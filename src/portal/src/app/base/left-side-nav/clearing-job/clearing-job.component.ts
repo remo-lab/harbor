@@ -14,6 +14,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'app-clearing-job',
     templateUrl: './clearing-job.component.html',
     styleUrls: ['./clearing-job.component.scss'],

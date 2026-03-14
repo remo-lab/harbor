@@ -19,8 +19,31 @@ import { DateValidatorDirective } from './directives/date-validator.directive';
 import { PortValidatorDirective } from './directives/port.directive';
 import { MaxLengthExtValidatorDirective } from './directives/max-length-ext.directive';
 import { ErrorHandler } from './units/error-handler';
-import { ClarityIconsApi } from '@clr/icons/clr-icons-api';
 import { ClarityModule } from '@clr/angular';
+import { ClarityIcons } from '@cds/core/icon';
+import '@cds/core/icon/register.js';
+import {
+    loadCoreIconSet,
+    loadEssentialIconSet,
+    loadTechnologyIconSet,
+    loadChartIconSet,
+    loadCommerceIconSet,
+    loadMediaIconSet,
+    loadSocialIconSet,
+    loadTextEditIconSet,
+    loadTravelIconSet,
+} from '@cds/core/icon';
+
+// Load all standard Clarity icon sets (replaces @clr/icons global script)
+loadCoreIconSet();
+loadEssentialIconSet();
+loadTechnologyIconSet();
+loadChartIconSet();
+loadCommerceIconSet();
+loadMediaIconSet();
+loadSocialIconSet();
+loadTextEditIconSet();
+loadTravelIconSet();
 import { MarkdownModule } from 'ngx-markdown';
 import { CommonModule } from '@angular/common';
 import { ClipboardModule } from './components/third-party/ngx-clipboard';
@@ -108,13 +131,9 @@ echarts.use([
     LegendComponent,
 ]);
 
-// ClarityIcons is publicly accessible from the browser's window object.
-declare const ClarityIcons: ClarityIconsApi;
-
-// Add custom icons to ClarityIcons
-// Add robot head icon
-ClarityIcons.add({
-    'robot-head': `
+// Add custom icons to ClarityIcons via @cds/core
+ClarityIcons.addIcons(
+    ['robot-head', `
 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
 <defs><style>.cls-1{fill:none;}</style></defs><g id="Layer_2" data-name="Layer 2">
 <circle cx="12.62" cy="18.6" r="1.5"/><circle cx="23.5" cy="18.5" r="1.5"/>
@@ -127,8 +146,8 @@ ClarityIcons.add({
 19.51,19.51,0,0,1,8.33,12H16V10H7.76a1,1,0,0,0-.86.49A21.18,
 21.18,0,0,0,4,21.42,21,21,0,0,0,7.71,33.58a1,1,0,0,0,.81.42h19a1,1,0,0,0,
 .81-.42A21,21,0,0,0,32,21.42,21.18,21.18,0,0,0,29.1,10.49Z"/>
-<rect class="cls-1" width="36" height="36"/></g></svg>`,
-    sbom: `
+<rect class="cls-1" width="36" height="36"/></g></svg>`],
+    ['sbom', `
 <?xml version='1.0' encoding='utf-8'?>
 <!-- Generator: imaengine 6.0   -->
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0,0,512,512" style="enable-background:new 0 0 512 512;" version="1.1">
@@ -144,8 +163,8 @@ ClarityIcons.add({
 <![CDATA[SBOM]]></tspan>
 </text>
 </g>
-</svg>`,
-});
+</svg>`]
+);
 
 @NgModule({
     imports: [

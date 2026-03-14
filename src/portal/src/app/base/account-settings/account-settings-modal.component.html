@@ -36,10 +36,10 @@
                             {{ 'PROFILE.ADMIN_RENAME_BUTTON' | translate }}
                         </button>
                         <clr-tooltip>
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 clrPosition="bottom-left"
                                 clrSize="md"
@@ -85,9 +85,9 @@
                             (blur)="
                                 handleValidation('account_settings_email', true)
                             " />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                         <span
                             class="spinner spinner-inline"
                             [hidden]="!checkProgress"></span>
@@ -149,10 +149,10 @@
                 <label class="clr-control-label"
                     >{{ 'PROFILE.CLI_PASSWORD' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="20"></clr-icon>
+                            size="20"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="top-right"
                             clrSize="md"
@@ -271,23 +271,23 @@
                             name="input_secret"
                             [(ngModel)]="resetForms.input_secret"
                             id="input-secret" />
-                        <clr-icon
+                        <cds-icon
                             *ngIf="!showInputSecret"
                             shape="eye"
                             class="pw-eye"
                             (click)="
                                 showInputSecret = !showInputSecret
-                            "></clr-icon>
-                        <clr-icon
+                            "></cds-icon>
+                        <cds-icon
                             *ngIf="showInputSecret"
                             shape="eye-hide"
                             class="pw-eye"
                             (click)="
                                 showInputSecret = !showInputSecret
-                            "></clr-icon>
-                        <clr-icon
+                            "></cds-icon>
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error
                         *ngIf="
@@ -314,20 +314,20 @@
                             [(ngModel)]="resetForms.confirm_secret"
                             name="confirm_secret"
                             id="confirm-secret" />
-                        <clr-icon
+                        <cds-icon
                             *ngIf="!showConfirmSecret"
                             shape="eye"
                             class="pw-eye"
                             (click)="
                                 showConfirmSecret = !showConfirmSecret
-                            "></clr-icon>
-                        <clr-icon
+                            "></cds-icon>
+                        <cds-icon
                             *ngIf="showConfirmSecret"
                             shape="eye-hide"
                             class="pw-eye"
                             (click)="
                                 showConfirmSecret = !showConfirmSecret
-                            "></clr-icon>
+                            "></cds-icon>
                     </div>
                 </div>
             </div>

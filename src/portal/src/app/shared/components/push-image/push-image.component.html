@@ -5,7 +5,7 @@
             clrDropdownToggle
             (click)="onclick()">
             {{ 'PUSH_IMAGE.TITLE' | translate | uppercase }}
-            <clr-icon shape="caret down"></clr-icon>
+            <cds-icon shape="caret down"></cds-icon>
         </button>
         <clr-dropdown-menu
             *clrIfOpen
@@ -20,11 +20,11 @@
                     >
                     <span>
                         <clr-tooltip>
-                            <clr-icon
+                            <cds-icon
                                 clrTooltipTrigger
                                 shape="info-circle"
                                 class="info-tips-icon"
-                                size="24"></clr-icon>
+                                size="24"></cds-icon>
                             <clr-tooltip-content
                                 [clrPosition]="'top-right'"
                                 [clrSize]="'md'"

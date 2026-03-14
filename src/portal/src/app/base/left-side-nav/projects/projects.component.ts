@@ -32,6 +32,7 @@ import { ProjectTypes } from '../../../shared/entities/shared.const';
 import { getSortingString } from '../../../shared/units/utils';
 
 @Component({
+    standalone: false,
     selector: 'projects',
     templateUrl: 'projects.component.html',
     styleUrls: ['./projects.component.scss'],

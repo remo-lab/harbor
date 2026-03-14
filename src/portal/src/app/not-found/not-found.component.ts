@@ -18,6 +18,7 @@ const defaultInterval = 1000;
 const defaultLeftTime = 5;
 
 @Component({
+    standalone: false,
     selector: 'page-not-found',
     templateUrl: 'not-found.component.html',
     styleUrls: ['not-found.component.scss'],

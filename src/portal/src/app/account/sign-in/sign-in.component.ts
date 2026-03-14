@@ -26,7 +26,7 @@ import { ForgotPasswordComponent } from '../../base/password-setting/forgot-pass
 import { AppConfigService } from '../../services/app-config.service';
 import { AppConfig } from '../../services/app-config';
 import { User } from '../../base/left-side-nav/user/user';
-import { CookieOptions, CookieService } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { SkinableConfig } from '../../services/skinable-config.service';
 import { ModalEvent } from '../../base/modal-event';
 import { modalEvents } from '../../base/modal-events.const';
@@ -47,6 +47,7 @@ const remCookieKey = 'rem-username';
 const expireDays = 10;
 
 @Component({
+    standalone: false,
     selector: 'sign-in',
     templateUrl: 'sign-in.component.html',
     styleUrls: ['sign-in.component.scss'],
@@ -159,7 +160,7 @@ export class SignInComponent implements AfterViewChecked, OnInit {
             this.rememberMe = $event.target.checked;
             if (!this.rememberMe) {
                 // Remove cookie data
-                this.cookie.remove(remCookieKey);
+                this.cookie.delete(remCookieKey);
                 this.rememberedName = '';
             }
         }
@@ -171,14 +172,10 @@ export class SignInComponent implements AfterViewChecked, OnInit {
                 // Set expire time
                 let expires: number = expireDays * 3600 * 24 * 1000;
                 let date = new Date(Date.now() + expires);
-                let cookieptions: CookieOptions = {
-                    path: '/',
-                    expires: date,
-                };
-                this.cookie.put(
+                this.cookie.set(
                     remCookieKey,
                     this.signInCredential.principal,
-                    cookieptions
+                    { path: '/', expires: date }
                 );
             }
         }

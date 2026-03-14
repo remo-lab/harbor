@@ -60,6 +60,7 @@ describe('RobotPermissionsPanelComponent', () => {
 
 // mock a TestHostComponent for RobotPermissionsPanelComponent
 @Component({
+    standalone: false,
     template: `
         <ng-container *ngIf="mode === PermissionSelectPanelModes.MODAL">
             <robot-permissions-panel [mode]="mode">

@@ -28,6 +28,7 @@ import { Subject, Subscription } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
 @Component({
+    standalone: false,
     selector: 'app-artifact-filter',
     templateUrl: './artifact-filter.component.html',
     styleUrls: ['./artifact-filter.component.scss'],

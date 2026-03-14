@@ -65,6 +65,7 @@ import { ScheduleService } from '../../../../../../../ng-swagger-gen/services/sc
 import { JobType } from '../../../job-service-dashboard/job-service-dashboard.interface';
 
 @Component({
+    standalone: false,
     selector: 'hbr-list-replication-rule',
     templateUrl: './list-replication-rule.component.html',
     styleUrls: ['./list-replication-rule.component.scss'],

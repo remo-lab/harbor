@@ -41,6 +41,7 @@ import { ConfirmationMessage } from '../../../../../global-confirmation-dialog/c
 import { ConfirmationDialogService } from '../../../../../global-confirmation-dialog/confirmation-dialog.service';
 
 @Component({
+    standalone: false,
     selector: 'gc-history',
     templateUrl: './gc-history.component.html',
     styleUrls: ['./gc-history.component.scss'],

@@ -73,6 +73,7 @@ describe('RemainingTimeComponent', () => {
 
 // mock a TestHostComponent for ListProjectROComponent
 @Component({
+    standalone: false,
     template: ` <app-remaining-time
         [deadline]="expires_at"
         [timeDiff]="deltaTime"></app-remaining-time>`,

@@ -56,6 +56,7 @@ import { SupportedWebhookEventTypes } from '../../../../../ng-swagger-gen/models
 // The route path which will display this component
 const URL_TO_DISPLAY: RegExp = /^\/harbor\/projects\/(\d+)\/webhook$/;
 @Component({
+    standalone: false,
     templateUrl: './webhook.component.html',
     styleUrls: ['./webhook.component.scss'],
 })

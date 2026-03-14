@@ -15,6 +15,7 @@ import { ScrollManagerService } from './scroll-manager.service';
 import { Directive, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 
 @Directive({
+    standalone: false,
     selector: '[appScrollSection]',
 })
 export class ScrollSectionDirective implements OnInit, OnDestroy {

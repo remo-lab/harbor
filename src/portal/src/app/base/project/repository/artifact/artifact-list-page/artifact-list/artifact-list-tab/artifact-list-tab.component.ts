@@ -94,6 +94,7 @@ const TRUE: string = 'true';
 const FALSE: string = 'false';
 
 @Component({
+    standalone: false,
     selector: 'artifact-list-tab',
     templateUrl: './artifact-list-tab.component.html',
     styleUrls: ['./artifact-list-tab.component.scss'],

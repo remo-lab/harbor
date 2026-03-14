@@ -25,6 +25,7 @@ import {
 } from '../../../../services/event-service/event.service';
 
 @Component({
+    standalone: false,
     selector: 'artifact-summary',
     templateUrl: './artifact-summary.component.html',
     styleUrls: ['./artifact-summary.component.scss'],

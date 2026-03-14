@@ -218,6 +218,7 @@ describe('ProjectPolicyConfigComponent', () => {
 
 // mock a TestHostComponent for ProjectPolicyConfigComponent
 @Component({
+    standalone: false,
     template: ` <hbr-project-policy-config
         [projectName]="'testing'"
         [projectId]="1">

@@ -60,6 +60,7 @@ const SCHEDULE_TYPE = {
 };
 const TRUE: string = 'true';
 @Component({
+    standalone: false,
     selector: 'add-p2p-policy',
     templateUrl: './add-p2p-policy.component.html',
     styleUrls: ['./add-p2p-policy.component.scss'],

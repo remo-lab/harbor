@@ -32,6 +32,7 @@ import {
 } from '../../../../../../../shared/services';
 
 @Component({
+    standalone: false,
     selector: 'artifact-info',
     templateUrl: './artifact-info.component.html',
     styleUrls: ['./artifact-info.component.scss'],

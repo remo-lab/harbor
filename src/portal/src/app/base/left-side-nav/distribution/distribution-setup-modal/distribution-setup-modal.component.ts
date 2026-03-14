@@ -49,6 +49,7 @@ import { errorHandler } from '../../../../shared/units/shared.utils';
 const DEFAULT_PROVIDER: string = 'dragonfly';
 
 @Component({
+    standalone: false,
     selector: 'dist-setup-modal',
     templateUrl: './distribution-setup-modal.component.html',
     styleUrls: ['./distribution-setup-modal.component.scss'],

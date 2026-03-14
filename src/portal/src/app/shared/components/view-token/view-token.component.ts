@@ -31,6 +31,7 @@ import { errorHandler } from '../../units/shared.utils';
 import { CopyInputComponent } from '../push-image/copy-input.component';
 
 @Component({
+    standalone: false,
     selector: 'view-token',
     templateUrl: './view-token.component.html',
     styleUrls: ['./view-token.component.scss'],

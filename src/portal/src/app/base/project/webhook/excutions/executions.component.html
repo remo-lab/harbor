@@ -8,10 +8,10 @@
                     {{ 'P2P_PROVIDER.EXECUTIONS' | translate }}
                 </h4>
                 <span class="refresh-btn">
-                    <clr-icon
+                    <cds-icon
                         shape="refresh"
                         (click)="refreshExecutions(true, null)"
-                        [hidden]="loading"></clr-icon>
+                        [hidden]="loading"></cds-icon>
                 </span>
             </div>
         </clr-dg-action-bar>
@@ -51,11 +51,11 @@
             <clr-dg-cell
                 >{{ execution.status }}
                 <clr-tooltip>
-                    <clr-icon
+                    <cds-icon
                         *ngIf="execution.status_message"
                         clrTooltipTrigger
                         shape="info-circle"
-                        size="20"></clr-icon>
+                        size="20"></cds-icon>
                     <clr-tooltip-content
                         [clrPosition]="'left'"
                         clrSize="md"

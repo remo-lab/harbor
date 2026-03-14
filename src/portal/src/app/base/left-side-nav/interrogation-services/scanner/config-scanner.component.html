@@ -6,7 +6,7 @@
         <clr-datagrid
             (clrDgRefresh)="getScanners($event)"
             [clrDgLoading]="onGoing"
-            [(clrDgSingleSelected)]="selectedRow">
+            [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedRow">
             <clr-dg-action-bar>
                 <div class="clr-row">
                     <div class="clr-col-7">
@@ -14,7 +14,7 @@
                             type="button"
                             class="btn btn-secondary"
                             (click)="addNewScanner()">
-                            <clr-icon shape="plus" size="16"></clr-icon>
+                            <cds-icon shape="plus" size="16"></cds-icon>
                             {{ 'SCANNER.NEW_SCANNER' | translate }}
                         </button>
                         <button
@@ -36,9 +36,9 @@
                             clrDropdownTrigger>
                             <span id="action-scanner"
                                 >{{ 'MEMBER.ACTION' | translate
-                                }}<clr-icon
+                                }}<cds-icon
                                     class="clr-icon"
-                                    shape="caret down"></clr-icon
+                                    shape="caret down"></cds-icon
                             ></span>
                             <clr-dropdown-menu *clrIfOpen>
                                 <button
@@ -46,10 +46,10 @@
                                     (click)="editScanner()"
                                     class="btn btn-secondary"
                                     [disabled]="!selectedRow">
-                                    <clr-icon
+                                    <cds-icon
                                         class="margin-top-0"
                                         size="16"
-                                        shape="pencil"></clr-icon>
+                                        shape="pencil"></cds-icon>
                                     <span class="margin-left-10">{{
                                         'BUTTON.EDIT' | translate
                                     }}</span>
@@ -67,10 +67,10 @@
                                         *ngIf="
                                             selectedRow && selectedRow.disabled
                                         ">
-                                        <clr-icon
+                                        <cds-icon
                                             class="margin-top-2"
                                             size="16"
-                                            shape="success-standard"></clr-icon>
+                                            shape="success-standard"></cds-icon>
                                         <span class="margin-left-10">{{
                                             'WEBHOOK.ENABLED_BUTTON' | translate
                                         }}</span>
@@ -82,10 +82,10 @@
                                                 selectedRow.disabled
                                             )
                                         ">
-                                        <clr-icon
+                                        <cds-icon
                                             class="margin-top-2"
                                             size="16"
-                                            shape="ban"></clr-icon>
+                                            shape="ban"></cds-icon>
                                         <span class="margin-left-10">{{
                                             'WEBHOOK.DISABLED_BUTTON'
                                                 | translate
@@ -98,10 +98,10 @@
                                     (click)="deleteScanners()"
                                     class="btn btn-secondary"
                                     [disabled]="!selectedRow">
-                                    <clr-icon
+                                    <cds-icon
                                         class="margin-top-0"
                                         size="16"
-                                        shape="times"></clr-icon>
+                                        shape="times"></cds-icon>
                                     <span
                                         id="delete-scanner-action"
                                         class="margin-left-10"
@@ -114,9 +114,9 @@
                     <div class="clr-col-5">
                         <div class="action-head-pos">
                             <span (click)="refresh()" class="refresh-btn">
-                                <clr-icon
+                                <cds-icon
                                     shape="refresh"
-                                    [hidden]="onGoing"></clr-icon>
+                                    [hidden]="onGoing"></cds-icon>
                             </span>
                         </div>
                     </div>
@@ -178,19 +178,19 @@
                 </clr-dg-cell>
                 <clr-dg-cell>
                     <div *ngIf="!scanner.disabled" class="icon-wrap">
-                        <clr-icon
+                        <cds-icon
                             shape="check-circle"
                             size="20"
-                            class="is-success enabled-icon"></clr-icon>
+                            class="is-success enabled-icon"></cds-icon>
                         <span class="margin-left-5px">{{
                             'WEBHOOK.ENABLED' | translate
                         }}</span>
                     </div>
                     <div *ngIf="scanner.disabled" class="icon-wrap">
-                        <clr-icon
+                        <cds-icon
                             shape="exclamation-triangle"
                             size="20"
-                            class="is-warning"></clr-icon>
+                            class="is-warning"></cds-icon>
                         <span class="margin-left-5px">{{
                             'WEBHOOK.DISABLED' | translate
                         }}</span>

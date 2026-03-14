@@ -41,6 +41,7 @@ import { ScheduleService } from '../../../../../../ng-swagger-gen/services/sched
 import { JobServiceDashboardSharedDataService } from '../job-service-dashboard-shared-data.service';
 
 @Component({
+    standalone: false,
     selector: 'app-schedule-card',
     templateUrl: './schedule-card.component.html',
     styleUrls: ['./schedule-card.component.scss'],

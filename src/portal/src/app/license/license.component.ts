@@ -17,6 +17,7 @@ import { throwError as observableThrowError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
 @Component({
+    standalone: false,
     selector: 'app-license',
     viewProviders: [Title],
     templateUrl: './license.component.html',

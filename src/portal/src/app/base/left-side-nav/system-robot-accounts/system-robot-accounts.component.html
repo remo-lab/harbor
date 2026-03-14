@@ -11,7 +11,7 @@
                         'SYSTEM_ROBOT.SEARCH_BY_NAME' | translate
                     }}"></hbr-filter>
                 <span class="refresh-btn" (click)="refresh()">
-                    <clr-icon shape="refresh"></clr-icon>
+                    <cds-icon shape="refresh"></cds-icon>
                 </span>
             </div>
         </div>
@@ -24,7 +24,7 @@
                 class="btn btn-secondary"
                 (click)="openNewRobotModal(false)">
                 <span>
-                    <clr-icon shape="plus" size="16"></clr-icon>&nbsp;{{
+                    <cds-icon shape="plus" size="16"></cds-icon>&nbsp;{{
                         'ROBOT_ACCOUNT.NEW_ROBOT_ACCOUNT' | translate
                     }}
                 </span>
@@ -35,9 +35,9 @@
                 clrDropdownTrigger>
                 <span
                     >{{ 'MEMBER.ACTION' | translate
-                    }}<clr-icon
+                    }}<cds-icon
                         shape="caret
-            down"></clr-icon
+            down"></cds-icon
                 ></span>
                 <clr-dropdown-menu *clrIfOpen>
                     <button
@@ -47,7 +47,7 @@
                         "
                         clrDropdownItem
                         (click)="openTokenModal()">
-                        <clr-icon shape="details" size="16"></clr-icon>&nbsp;
+                        <cds-icon shape="details" size="16"></cds-icon>&nbsp;
                         <span id="system-robot-token">{{
                             'SYSTEM_ROBOT.VIEW_SECRET' | translate
                         }}</span>
@@ -59,7 +59,7 @@
                         "
                         clrDropdownItem
                         (click)="openNewRobotModal(true)">
-                        <clr-icon shape="edit" size="16"></clr-icon>&nbsp;
+                        <cds-icon shape="edit" size="16"></cds-icon>&nbsp;
                         <span id="system-robot-edit">{{
                             'BUTTON.EDIT' | translate
                         }}</span>
@@ -80,7 +80,7 @@
                                 selectedRows[0].disable
                             )
                         ">
-                        <clr-icon size="16" shape="success-standard"></clr-icon
+                        <cds-icon size="16" shape="success-standard"></cds-icon
                         >&nbsp;
                         <span id="distribution-enable">{{
                             'WEBHOOK.ENABLED_BUTTON' | translate
@@ -104,7 +104,7 @@
                                 !selectedRows[0].disable
                             )
                         ">
-                        <clr-icon size="16" shape="ban"></clr-icon>&nbsp;
+                        <cds-icon size="16" shape="ban"></cds-icon>&nbsp;
                         <span id="distribution-disable">{{
                             'WEBHOOK.DISABLED_BUTTON' | translate
                         }}</span>
@@ -117,7 +117,7 @@
                         "
                         clrDropdownItem
                         (click)="openDeleteRobotsDialog()">
-                        <clr-icon shape="window-close" size="16"></clr-icon
+                        <cds-icon shape="window-close" size="16"></cds-icon
                         >&nbsp;
                         <span id="system-robot-delete">{{
                             'BUTTON.DELETE' | translate
@@ -157,16 +157,16 @@
             <clr-dg-row *ngFor="let r of robots" [clrDgItem]="r">
                 <clr-dg-cell>{{ r.name }}</clr-dg-cell>
                 <clr-dg-cell [ngSwitch]="r.disable">
-                    <clr-icon
+                    <cds-icon
                         shape="check-circle"
                         *ngSwitchCase="false"
                         size="20"
-                        class="color-green"></clr-icon>
-                    <clr-icon
+                        class="color-green"></cds-icon>
+                    <cds-icon
                         shape="times-circle"
                         *ngSwitchCase="true"
                         size="16"
-                        class="color-red red-position"></clr-icon>
+                        class="color-red red-position"></cds-icon>
                 </clr-dg-cell>
                 <clr-dg-cell>
                     <span *ngIf="!getSystemAccess(r)?.length">
@@ -180,10 +180,10 @@
                         <button class="btn btn-link btn-sm m-0 p-0" modal>
                             {{ getSystemAccess(r)?.length }}
                             {{ 'SYSTEM_ROBOT.PERMISSIONS' | translate }}
-                            <clr-icon
+                            <cds-icon
                                 class="icon"
                                 size="12"
-                                shape="caret down"></clr-icon>
+                                shape="caret down"></cds-icon>
                         </button>
                     </robot-permissions-panel>
                 </clr-dg-cell>
@@ -202,10 +202,10 @@
                             <button class="btn btn-link btn-sm m-0" modal>
                                 {{ r.permissionScope?.access?.length }}
                                 {{ 'SYSTEM_ROBOT.PERMISSIONS' | translate }}
-                                <clr-icon
+                                <cds-icon
                                     class="icon"
                                     size="12"
-                                    shape="caret down"></clr-icon>
+                                    shape="caret down"></cds-icon>
                             </button>
                         </robot-permissions-panel>
                     </div>

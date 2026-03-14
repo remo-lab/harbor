@@ -23,6 +23,7 @@ import { ScannerService } from '../../../../../../../ng-swagger-gen/services/sca
 import { ScannerAdapterMetadata } from '../../../../../../../ng-swagger-gen/models/scanner-adapter-metadata';
 
 @Component({
+    standalone: false,
     selector: 'scanner-metadata',
     templateUrl: 'scanner-metadata.html',
     styleUrls: ['./scanner-metadata.scss'],

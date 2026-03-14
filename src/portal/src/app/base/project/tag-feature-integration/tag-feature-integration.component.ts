@@ -20,6 +20,7 @@ import { forkJoin, Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
+    standalone: false,
     selector: 'app-tag-feature-integration',
     templateUrl: './tag-feature-integration.component.html',
     styleUrls: ['./tag-feature-integration.component.scss'],

@@ -19,6 +19,7 @@ import { Component } from '@angular/core';
 
 // mock a TestHostComponent for ListProjectROComponent
 @Component({
+    standalone: false,
     template: ` <list-project-ro [projects]="projects"> </list-project-ro>`,
 })
 class TestHostComponent {

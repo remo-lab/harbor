@@ -57,6 +57,7 @@ const DECORATION = {
 };
 
 @Component({
+    standalone: false,
     selector: 'tag-retention',
     templateUrl: './tag-retention.component.html',
     styleUrls: ['./tag-retention.component.scss'],

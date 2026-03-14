@@ -14,6 +14,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
+    standalone: false,
     selector: 'app-copy-digest',
     templateUrl: './copy-digest.component.html',
     styleUrls: ['./copy-digest.component.scss'],

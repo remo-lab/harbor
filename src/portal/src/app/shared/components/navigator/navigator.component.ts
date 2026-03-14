@@ -41,13 +41,14 @@ import {
     StyleMode,
 } from '../../../services/theme';
 import { getDatetimeRendering } from '../../units/shared.utils';
-import { ClrCommonStrings } from '@clr/angular/utils/i18n/common-strings.interface';
+import { ClrCommonStrings } from '@clr/angular/utils';
 import { map } from 'rxjs/operators';
 import { forkJoin, Observable } from 'rxjs';
 import { ClrCommonStringsService } from '@clr/angular';
 import { signInStatusError } from '../../../account/sign-in/sign-in.component';
 
 @Component({
+    standalone: false,
     selector: 'navigator',
     templateUrl: 'navigator.component.html',
     styleUrls: ['navigator.component.scss'],

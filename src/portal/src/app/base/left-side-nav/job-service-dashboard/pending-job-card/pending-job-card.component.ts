@@ -37,6 +37,7 @@ import { OperationService } from '../../../../shared/components/operation/operat
 import { JobServiceDashboardSharedDataService } from '../job-service-dashboard-shared-data.service';
 
 @Component({
+    standalone: false,
     selector: 'app-pending-job-card',
     templateUrl: './pending-job-card.component.html',
     styleUrls: ['./pending-job-card.component.scss'],

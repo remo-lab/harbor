@@ -50,6 +50,7 @@ import { Subscription } from 'rxjs';
 export const ACCESSORY_PAGE_SIZE: number = 5;
 
 @Component({
+    standalone: false,
     selector: 'sub-accessories',
     templateUrl: 'sub-accessories.component.html',
     styleUrls: ['./sub-accessories.component.scss'],

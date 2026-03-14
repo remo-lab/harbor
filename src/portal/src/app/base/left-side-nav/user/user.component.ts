@@ -56,6 +56,7 @@ import {
  */
 
 @Component({
+    standalone: false,
     selector: 'harbor-user',
     templateUrl: 'user.component.html',
     styleUrls: ['user.component.scss'],

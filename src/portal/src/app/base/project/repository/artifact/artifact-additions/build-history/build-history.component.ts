@@ -19,6 +19,7 @@ import { AdditionLink } from '../../../../../../../../ng-swagger-gen/models/addi
 import { ErrorHandler } from '../../../../../../shared/units/error-handler';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-build-history',
     templateUrl: './build-history.component.html',
     styleUrls: ['./build-history.component.scss'],

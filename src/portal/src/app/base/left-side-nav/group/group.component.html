@@ -9,11 +9,11 @@
                 (filterEvt)="doFilter($event)"
                 [currentValue]="currentTerm"></hbr-filter>
             <span class="refresh-btn">
-                <clr-icon
+                <cds-icon
                     shape="refresh"
                     [hidden]="loading"
                     ng-disabled="loading"
-                    (click)="refresh()"></clr-icon>
+                    (click)="refresh()"></cds-icon>
                 <span
                     class="spinner spinner-inline"
                     [hidden]="loading === false"></span>
@@ -30,7 +30,7 @@
                         class="btn btn-secondary"
                         (click)="addGroup()"
                         [disabled]="!canAddGroup">
-                        <clr-icon shape="plus" size="15"></clr-icon>&nbsp;{{
+                        <cds-icon shape="plus" size="15"></cds-icon>&nbsp;{{
                             'GROUP.ADD' | translate
                         }}
                     </button>
@@ -39,7 +39,7 @@
                         class="btn btn-secondary"
                         (click)="editGroup()"
                         [disabled]="!canEditGroup">
-                        <clr-icon shape="pencil" size="15"></clr-icon>&nbsp;{{
+                        <cds-icon shape="pencil" size="15"></cds-icon>&nbsp;{{
                             'GROUP.EDIT' | translate
                         }}
                     </button>
@@ -48,7 +48,7 @@
                         class="btn btn-secondary"
                         (click)="openDeleteConfirmationDialog()"
                         [disabled]="!canDeleteGroup">
-                        <clr-icon shape="times" size="15"></clr-icon>&nbsp;{{
+                        <cds-icon shape="times" size="15"></cds-icon>&nbsp;{{
                             'GROUP.DELETE' | translate
                         }}
                     </button>

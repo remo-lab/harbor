@@ -25,7 +25,7 @@
                                 id="{{ 'action' + i }}"
                                 class="dropdown-toggle btn btn-sm btn-link">
                                 {{ 'IMMUTABLE_TAG.ACTION' | translate }}
-                                <clr-icon shape="caret down"></clr-icon>
+                                <cds-icon shape="caret down"></cds-icon>
                             </button>
                             <div class="dropdown-menu">
                                 <button
@@ -62,15 +62,15 @@
                     </div>
                     <div class="clr-col">
                         <span>
-                            <clr-icon
+                            <cds-icon
                                 *ngIf="!rule?.disabled"
                                 class="color-green"
-                                shape="success-standard"></clr-icon>
-                            <clr-icon
+                                shape="success-standard"></cds-icon>
+                            <cds-icon
                                 id="{{ 'disable-icon' + i }}"
                                 *ngIf="rule?.disabled"
                                 class="ml-0 color-red"
-                                shape="error-standard"></clr-icon>
+                                shape="error-standard"></cds-icon>
                         </span>
                         <span class="rule-name ml-5">
                             <span>{{

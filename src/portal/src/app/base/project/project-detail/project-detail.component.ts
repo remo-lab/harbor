@@ -51,6 +51,7 @@ import {
 import { RouteConfigId } from '../../../route-reuse-strategy/harbor-route-reuse-strategy';
 
 @Component({
+    standalone: false,
     selector: 'project-detail',
     templateUrl: 'project-detail.component.html',
     styleUrls: ['project-detail.component.scss'],

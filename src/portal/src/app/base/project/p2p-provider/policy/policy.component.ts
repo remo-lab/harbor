@@ -65,6 +65,7 @@ const URL_TO_DISPLAY: RegExp =
     /\/harbor\/projects\/(\d+)\/p2p-provider\/policies/;
 
 @Component({
+    standalone: false,
     templateUrl: './policy.component.html',
     styleUrls: ['./policy.component.scss'],
 })

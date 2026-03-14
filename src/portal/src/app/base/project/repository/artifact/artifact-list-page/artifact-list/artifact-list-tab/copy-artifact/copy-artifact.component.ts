@@ -22,6 +22,7 @@ import { ErrorHandler } from '../../../../../../../../shared/units/error-handler
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
+    standalone: false,
     selector: 'app-copy-artifact',
     templateUrl: './copy-artifact.component.html',
     styleUrls: ['./copy-artifact.component.scss'],

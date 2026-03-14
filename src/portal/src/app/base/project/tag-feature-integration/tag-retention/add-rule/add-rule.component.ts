@@ -27,6 +27,7 @@ const EXISTING_RULE = 'TAG_RETENTION.EXISTING_RULE';
 const INVALID_RULE = 'TAG_RETENTION.INVALID_RULE';
 const MAX = 2100000000;
 @Component({
+    standalone: false,
     selector: 'add-rule',
     templateUrl: './add-rule.component.html',
     styleUrls: ['./add-rule.component.scss'],

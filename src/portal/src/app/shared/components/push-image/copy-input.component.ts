@@ -21,6 +21,7 @@ export const enum CopyStatus {
 }
 
 @Component({
+    standalone: false,
     selector: 'hbr-copy-input',
     templateUrl: './copy-input.coponent.html',
     styleUrls: ['./push-image.scss'],

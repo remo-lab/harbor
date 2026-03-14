@@ -23,6 +23,7 @@ import { finalize } from 'rxjs/operators';
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'app-projects-modal',
     templateUrl: './projects-modal.component.html',
     styleUrls: ['./projects-modal.component.scss'],

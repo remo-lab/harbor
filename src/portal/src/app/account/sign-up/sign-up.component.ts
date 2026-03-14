@@ -20,6 +20,7 @@ import { UserService } from '../../base/left-side-nav/user/user.service';
 import { InlineAlertComponent } from '../../shared/components/inline-alert/inline-alert.component';
 
 @Component({
+    standalone: false,
     selector: 'sign-up',
     templateUrl: 'sign-up.component.html',
     styleUrls: ['../../common.scss'],

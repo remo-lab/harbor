@@ -16,7 +16,7 @@
                                 type="button"
                                 class="btn btn-secondary"
                                 (click)="addInstance()">
-                                <clr-icon shape="plus" size="16"></clr-icon
+                                <cds-icon shape="plus" size="16"></cds-icon
                                 >&nbsp;{{
                                     'DISTRIBUTION.ADD_ACTION' | translate
                                 }}
@@ -27,7 +27,7 @@
                                 clrDropdownTrigger>
                                 <span id="member-action"
                                     >{{ 'BUTTON.ACTIONS' | translate
-                                    }}<clr-icon shape="caret down"></clr-icon
+                                    }}<cds-icon shape="caret down"></cds-icon
                                 ></span>
                                 <clr-dropdown-menu *clrIfOpen>
                                     <clr-dropdown>
@@ -41,9 +41,9 @@
                                                     selectedRow.length === 1
                                                 )
                                             ">
-                                            <clr-icon
+                                            <cds-icon
                                                 shape="edit"
-                                                size="16"></clr-icon
+                                                size="16"></cds-icon
                                             >&nbsp;
                                             <span id="distribution-edit">{{
                                                 'BUTTON.EDIT' | translate
@@ -70,9 +70,9 @@
                                                     !selectedRow[0].enabled
                                                 )
                                             ">
-                                            <clr-icon
+                                            <cds-icon
                                                 shape="connect"
-                                                size="16"></clr-icon
+                                                size="16"></cds-icon
                                             >&nbsp;
                                             <span id="distribution-enable">{{
                                                 'WEBHOOK.ENABLED_BUTTON'
@@ -102,9 +102,9 @@
                                                     selectedRow[0].enabled
                                                 )
                                             ">
-                                            <clr-icon
+                                            <cds-icon
                                                 shape="disconnect"
-                                                size="16"></clr-icon
+                                                size="16"></cds-icon
                                             >&nbsp;
                                             <span id="distribution-disable">{{
                                                 'WEBHOOK.DISABLED_BUTTON'
@@ -122,9 +122,9 @@
                                                 )
                                             "
                                             [disabled]="selectedRow.length < 1">
-                                            <clr-icon
+                                            <cds-icon
                                                 shape="window-close"
-                                                size="16"></clr-icon
+                                                size="16"></cds-icon
                                             >&nbsp;
                                             <span id="distribution-delete">{{
                                                 'BUTTON.DELETE' | translate
@@ -144,11 +144,11 @@
                                     }}"
                                     (filterEvt)="doFilter($event)"></hbr-filter>
                                 <span class="refresh-btn">
-                                    <clr-icon
+                                    <cds-icon
                                         shape="refresh"
                                         [hidden]="inProgress"
                                         ng-disabled="inProgress"
-                                        (click)="refresh()"></clr-icon>
+                                        (click)="refresh()"></cds-icon>
                                     <span
                                         class="spinner spinner-inline"
                                         [hidden]="inProgress === false"></span>
@@ -217,19 +217,19 @@
                     </clr-dg-cell>
                     <clr-dg-cell>
                         <div *ngIf="instance.enabled" class="icon-wrap">
-                            <clr-icon
+                            <cds-icon
                                 shape="check-circle"
                                 size="20"
-                                class="is-success enabled-icon"></clr-icon>
+                                class="is-success enabled-icon"></cds-icon>
                             <span class="margin-left-5px">{{
                                 'WEBHOOK.ENABLED' | translate
                             }}</span>
                         </div>
                         <div *ngIf="!instance.enabled" class="icon-wrap">
-                            <clr-icon
+                            <cds-icon
                                 shape="exclamation-triangle"
                                 size="20"
-                                class="is-warning"></clr-icon>
+                                class="is-warning"></cds-icon>
                             <span class="margin-left-5px">{{
                                 'WEBHOOK.DISABLED' | translate
                             }}</span>

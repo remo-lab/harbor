@@ -18,6 +18,7 @@ import { Repository } from '../../../../../ng-swagger-gen/models/repository';
 import { ListMode } from '../../../shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'top-repo',
     templateUrl: 'top-repo.component.html',
     styleUrls: ['top-repo.component.scss'],

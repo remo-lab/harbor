@@ -23,6 +23,7 @@ import { MessageHandlerService } from '../../services/message-handler.service';
 import { filter, switchMap } from 'rxjs/operators';
 
 @Component({
+    standalone: false,
     selector: 'search-result',
     templateUrl: 'search-result.component.html',
     styleUrls: ['search.component.scss'],

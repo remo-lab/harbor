@@ -20,6 +20,7 @@ import { MessageHandlerService } from '../../shared/services/message-handler.ser
 import { InlineAlertComponent } from '../../shared/components/inline-alert/inline-alert.component';
 
 @Component({
+    standalone: false,
     selector: 'password-setting',
     templateUrl: 'password-setting.component.html',
     styleUrls: ['./password-setting.component.scss', '../../common.scss'],

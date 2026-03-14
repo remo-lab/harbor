@@ -21,7 +21,7 @@
             </textarea>
         </span>
         <span>
-            <clr-icon
+            <cds-icon
                 shape="copy"
                 [class.is-success]="isCopied"
                 [class.is-error]="hasCopyError"
@@ -29,7 +29,7 @@
                 size="24"
                 [ngxClipboard]="inputTarget1"
                 (cbOnSuccess)="onSuccess($event)"
-                (cbOnError)="onError($event)"></clr-icon>
+                (cbOnError)="onError($event)"></cds-icon>
         </span>
     </div>
 </div>

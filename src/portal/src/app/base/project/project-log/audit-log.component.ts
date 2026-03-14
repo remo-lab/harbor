@@ -63,6 +63,7 @@ export class SearchOption {
 }
 
 @Component({
+    standalone: false,
     selector: 'project-audit-log',
     templateUrl: './audit-log.component.html',
     styleUrls: ['./audit-log.component.scss'],

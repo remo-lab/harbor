@@ -34,6 +34,7 @@ import {
 import { distinctUntilChanged } from 'rxjs/operators';
 
 @Component({
+    standalone: false,
     selector: 'edit-project-quotas',
     templateUrl: './edit-project-quotas.component.html',
     styleUrls: ['./edit-project-quotas.component.scss'],

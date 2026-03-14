@@ -66,6 +66,7 @@ import { PermissionsService } from '../../../../../ng-swagger-gen/services/permi
 import { Permissions } from '../../../../../ng-swagger-gen/models/permissions';
 
 @Component({
+    standalone: false,
     selector: 'app-robot-account',
     templateUrl: './robot-account.component.html',
     styleUrls: ['./robot-account.component.scss'],

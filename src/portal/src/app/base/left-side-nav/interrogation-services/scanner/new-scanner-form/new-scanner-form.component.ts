@@ -35,6 +35,7 @@ import {
 import { ScannerService } from '../../../../../../../ng-swagger-gen/services/scanner.service';
 
 @Component({
+    standalone: false,
     selector: 'new-scanner-form',
     templateUrl: 'new-scanner-form.component.html',
     styleUrls: ['new-scanner-form.component.scss'],

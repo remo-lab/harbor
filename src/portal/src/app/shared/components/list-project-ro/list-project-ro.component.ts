@@ -15,6 +15,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Project } from '../../../../../ng-swagger-gen/models/project';
 
 @Component({
+    standalone: false,
     selector: 'list-project-ro',
     templateUrl: 'list-project-ro.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,

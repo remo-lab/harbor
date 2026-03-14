@@ -24,6 +24,7 @@ import { NgModel } from '@angular/forms';
 import { DEFAULT_LANG_LOCALSTORAGE_KEY } from '../../entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'hbr-datetime',
     templateUrl: './datetime-picker.component.html',
     styleUrls: ['./datetime-picker.component.scss'],

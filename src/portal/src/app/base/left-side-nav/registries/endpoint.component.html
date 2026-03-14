@@ -12,7 +12,7 @@
                         (filterEvt)="doSearchTargets($event)"
                         [currentValue]="targetName"></hbr-filter>
                     <span class="refresh-btn" (click)="refreshTargets()">
-                        <clr-icon shape="refresh"></clr-icon>
+                        <cds-icon shape="refresh"></cds-icon>
                     </span>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                         type="button"
                         class="btn btn-secondary"
                         (click)="openModal()">
-                        <clr-icon shape="plus" size="16"></clr-icon>&nbsp;{{
+                        <cds-icon shape="plus" size="16"></cds-icon>&nbsp;{{
                             'DESTINATION.NEW_ENDPOINT' | translate
                         }}
                     </button>
@@ -38,7 +38,7 @@
                         class="btn btn-secondary"
                         [disabled]="!(selectedRow.length === 1)"
                         (click)="editTargets(selectedRow)">
-                        <clr-icon shape="pencil" size="16"></clr-icon>&nbsp;{{
+                        <cds-icon shape="pencil" size="16"></cds-icon>&nbsp;{{
                             'DESTINATION.EDIT' | translate
                         }}
                     </button>
@@ -48,7 +48,7 @@
                         class="btn btn-secondary"
                         [disabled]="!selectedRow.length"
                         (click)="deleteTargets(selectedRow)">
-                        <clr-icon shape="times" size="16"></clr-icon>&nbsp;{{
+                        <cds-icon shape="times" size="16"></cds-icon>&nbsp;{{
                             'DESTINATION.DELETE' | translate
                         }}
                     </button>

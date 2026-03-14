@@ -102,6 +102,7 @@ export class ProjectPolicy {
 const PAGE_SIZE: number = 100;
 
 @Component({
+    standalone: false,
     selector: 'hbr-project-policy-config',
     templateUrl: './project-policy-config.component.html',
     styleUrls: ['./project-policy-config.component.scss'],

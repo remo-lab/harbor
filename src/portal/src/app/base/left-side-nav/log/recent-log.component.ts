@@ -26,6 +26,7 @@ import ListAuditLogsParams = AuditlogService.ListAuditLogsParams;
 import { PAGE_SIZE_OPTIONS } from 'src/app/shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'hbr-log',
     templateUrl: './recent-log.component.html',
     styleUrls: ['./recent-log.component.scss'],

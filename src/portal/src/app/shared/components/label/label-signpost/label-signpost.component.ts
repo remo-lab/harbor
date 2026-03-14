@@ -17,6 +17,7 @@ import { Component, Input } from '@angular/core';
 import { Label } from '../../../services';
 
 @Component({
+    standalone: false,
     selector: 'hbr-resource-label-signpost',
     templateUrl: './label-signpost.component.html',
     styleUrls: ['./label-signpost.component.scss'],

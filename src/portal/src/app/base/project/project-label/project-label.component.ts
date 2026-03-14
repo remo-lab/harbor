@@ -23,6 +23,7 @@ import {
 import { ErrorHandler } from '../../../shared/units/error-handler';
 
 @Component({
+    standalone: false,
     selector: 'app-project-config',
     templateUrl: './project-label.component.html',
     styleUrls: ['./project-label.component.scss'],

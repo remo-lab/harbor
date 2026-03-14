@@ -3,7 +3,7 @@
         <div class="row flex-items-xs-right rightPos">
             <div class="flex-xs-middle option-right">
                 <span class="refresh-btn" (click)="refresh()"
-                    ><clr-icon shape="refresh"></clr-icon
+                    ><cds-icon shape="refresh"></cds-icon
                 ></span>
             </div>
         </div>
@@ -20,15 +20,15 @@
                             class="btn btn-secondary"
                             [clrLoading]="scanBtnState"
                             [disabled]="!canScan()">
-                            <clr-icon
+                            <cds-icon
                                 shape="shield-check"
                                 size="16"
-                                *ngIf="!isRunningState()"></clr-icon
+                                *ngIf="!isRunningState()"></cds-icon
                             >&nbsp;
-                            <clr-icon
+                            <cds-icon
                                 shape="stop"
                                 size="16"
-                                *ngIf="isRunningState()"></clr-icon
+                                *ngIf="isRunningState()"></cds-icon
                             >&nbsp;
                             <span *ngIf="!isRunningState()">{{
                                 'VULNERABILITY.SCAN_NOW' | translate
@@ -162,10 +162,10 @@
                 <clr-dg-cell>{{ res.version }}</clr-dg-cell>
                 <clr-dg-cell>
                     <div *ngIf="res.fix_version; else elseBlock">
-                        <clr-icon
+                        <cds-icon
                             shape="wrench"
                             class="is-success"
-                            size="20"></clr-icon
+                            size="20"></cds-icon
                         >&nbsp;<span class="font-color-green">{{
                             res.fix_version
                         }}</span>

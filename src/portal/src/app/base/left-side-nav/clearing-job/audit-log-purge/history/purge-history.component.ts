@@ -39,6 +39,7 @@ import { ConfirmationDialogService } from '../../../../global-confirmation-dialo
 import { ExecHistory } from '../../../../../../../ng-swagger-gen/models/exec-history';
 
 @Component({
+    standalone: false,
     selector: 'app-purge-history',
     templateUrl: './purge-history.component.html',
     styleUrls: ['./purge-history.component.scss'],

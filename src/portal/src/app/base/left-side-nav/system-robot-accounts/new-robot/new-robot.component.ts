@@ -65,6 +65,7 @@ import { Permissions } from '../../../../../../ng-swagger-gen/models/permissions
 const MINI_SECONDS_ONE_DAY: number = 60 * 24 * 60 * 1000;
 
 @Component({
+    standalone: false,
     selector: 'new-robot',
     templateUrl: './new-robot.component.html',
     styleUrls: ['./new-robot.component.scss'],

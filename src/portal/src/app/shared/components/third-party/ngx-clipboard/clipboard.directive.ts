@@ -24,6 +24,7 @@ import {
 } from '@angular/core';
 
 @Directive({
+    standalone: false,
     selector: '[ngxClipboard]',
 })
 export class ClipboardDirective implements OnDestroy {

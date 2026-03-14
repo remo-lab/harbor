@@ -30,9 +30,9 @@
                             name="notify-type"
                             #name="ngModel"
                             required />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                         <span
                             class="spinner spinner-inline"
                             [hidden]="!checkNameOnGoing"></span>
@@ -103,10 +103,10 @@
                         </select>
                     </div>
                     <clr-tooltip [hidden]="webhook.targets[0].type !== 'slack'">
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="top-right"
                             clrSize="lg"
@@ -158,9 +158,9 @@
                         }}</label>
                     </div>
                     <div class="clr-subtext-wrapper" *ngIf="!hasEventType()">
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                         <span class="clr-subtext">{{
                             'WEBHOOK.EVENT_TYPE_REQUIRED' | translate
                         }}</span>
@@ -199,9 +199,9 @@
                                     ? 'http(s)://192.168.1.1'
                                     : ''
                             " />
-                        <clr-icon
+                        <cds-icon
                             class="clr-validate-icon"
-                            shape="exclamation-circle"></clr-icon>
+                            shape="exclamation-circle"></cds-icon>
                     </div>
                     <clr-control-error
                         *ngIf="
@@ -241,10 +241,10 @@
                 <label for="verify_remote_cert" class="clr-control-label">
                     {{ 'WEBHOOK.VERIFY_REMOTE_CERT' | translate }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="top-right"
                             clrSize="lg"

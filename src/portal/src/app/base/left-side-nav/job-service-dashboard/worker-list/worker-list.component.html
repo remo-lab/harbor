@@ -3,10 +3,10 @@
     [clrDgLoading]="loadingPools"
     (clrDgRefresh)="clrLoadPool($event)"
     (clrDgSelectedChange)="refreshWorkers()"
-    [(clrDgSingleSelected)]="selectedPool">
+    [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedPool">
     <clr-dg-action-bar class="action-bar mt-0">
         <span class="refresh-btn" (click)="getPools()">
-            <clr-icon shape="refresh"></clr-icon>
+            <cds-icon shape="refresh"></cds-icon>
         </span>
     </clr-dg-action-bar>
     <clr-dg-column [clrDgField]="'worker_pool_id'">{{
@@ -69,10 +69,10 @@
                     {{ 'JOB_SERVICE_DASHBOARD.FREE' | translate }}
                 </button>
                 <clr-tooltip>
-                    <clr-icon
+                    <cds-icon
                         clrTooltipTrigger
                         shape="info-circle"
-                        size="24"></clr-icon>
+                        size="24"></cds-icon>
                     <clr-tooltip-content
                         clrPosition="top-right"
                         clrSize="lg"
@@ -87,7 +87,7 @@
                 </clr-tooltip>
             </div>
             <span class="refresh-btn" (click)="refreshWorkers()">
-                <clr-icon shape="refresh"></clr-icon>
+                <cds-icon shape="refresh"></cds-icon>
             </span>
         </clr-dg-action-bar>
         <clr-dg-column [clrDgField]="'id'">{{
@@ -121,7 +121,7 @@
                     target="_blank"
                     [href]="viewLog(w.job_id)"
                     *ngIf="w.job_id">
-                    <clr-icon shape="list"></clr-icon>
+                    <cds-icon shape="list"></cds-icon>
                 </a>
             </clr-dg-cell>
         </clr-dg-row>

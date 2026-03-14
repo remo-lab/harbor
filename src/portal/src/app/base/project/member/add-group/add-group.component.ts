@@ -37,6 +37,7 @@ import { MemberService } from 'ng-swagger-gen/services/member.service';
 import { MessageHandlerService } from '../../../../shared/services/message-handler.service';
 
 @Component({
+    standalone: false,
     selector: 'add-group',
     templateUrl: './add-group.component.html',
     styleUrls: ['./add-group.component.scss'],

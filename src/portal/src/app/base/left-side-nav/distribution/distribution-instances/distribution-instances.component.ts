@@ -62,6 +62,7 @@ const ONE_THOUSAND: number = 1000;
 const KRAKEN: string = 'kraken';
 
 @Component({
+    standalone: false,
     selector: 'dist-instances',
     templateUrl: './distribution-instances.component.html',
     styleUrls: ['./distribution-instances.component.scss'],

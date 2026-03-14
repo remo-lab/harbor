@@ -16,7 +16,7 @@ import {
     HttpClientTestingModule,
     HttpTestingController,
 } from '@angular/common/http/testing';
-import { CookieService } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { AppConfigService } from './app-config.service';
 import { AppConfig } from './app-config';
 import { CURRENT_BASE_HREF } from '../shared/units/utils';
@@ -40,8 +40,8 @@ describe('AppConfigService', () => {
             ],
         });
         injector = getTestBed();
-        service = injector.get(AppConfigService);
-        httpMock = injector.get(HttpTestingController);
+        service = injector.inject(AppConfigService);
+        httpMock = injector.inject(HttpTestingController);
     });
     let systeminfo = new AppConfig();
     it('should be created', inject(

@@ -34,6 +34,7 @@ const formatTransformers: Record<
 } as const;
 
 @Pipe({
+    standalone: false,
     name: 'harborDatetime',
     pure: true,
 })

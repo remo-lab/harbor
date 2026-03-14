@@ -16,7 +16,7 @@ import { SessionService } from '../../services/session.service';
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { PlatformLocation } from '@angular/common';
 import { NavigatorComponent } from './navigator.component';
-import { CookieService } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { AppConfigService } from '../../../services/app-config.service';
 import { MessageHandlerService } from '../../services/message-handler.service';
 import { SearchTriggerService } from '../global-search/search-trigger.service';
@@ -98,6 +98,7 @@ describe('NavigatorComponent', () => {
 
 // clr-header should only be used inside of a clr-main-container
 @Component({
+    standalone: false,
     selector: 'test-component-wrapper',
     template:
         '<clr-main-container><navigator></navigator></clr-main-container>',

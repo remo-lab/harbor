@@ -27,6 +27,7 @@ import { ClrLoadingState, ClrTabs } from '@clr/angular';
 import { ArtifactListPageService } from '../artifact-list-page/artifact-list-page.service';
 
 @Component({
+    standalone: false,
     selector: 'artifact-additions',
     templateUrl: './artifact-additions.component.html',
     styleUrls: ['./artifact-additions.component.scss'],

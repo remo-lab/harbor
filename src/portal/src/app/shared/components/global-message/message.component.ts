@@ -20,6 +20,7 @@ import { MessageService } from './message.service';
 import { dismissInterval } from '../../entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'global-message',
     templateUrl: 'message.component.html',
     styleUrls: ['message.component.scss'],

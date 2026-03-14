@@ -24,24 +24,24 @@
                     clrVerticalNavLink
                     routerLinkActive="active"
                     routerLink="/harbor/projects">
-                    <clr-icon
+                    <cds-icon
                         shape="organization"
-                        clrVerticalNavIcon></clr-icon>
+                        clrVerticalNavIcon></cds-icon>
                     {{ 'SIDE_NAV.PROJECTS' | translate }}
                 </a>
                 <a
                     clrVerticalNavLink
                     routerLinkActive="active"
                     routerLink="/harbor/logs">
-                    <clr-icon shape="list" clrVerticalNavIcon></clr-icon>
+                    <cds-icon shape="list" clrVerticalNavIcon></cds-icon>
                     {{ 'SIDE_NAV.LOGS' | translate }}
                 </a>
                 <clr-vertical-nav-group
                     *ngIf="isSystemAdmin"
                     routerLinkActive="active">
-                    <clr-icon
+                    <cds-icon
                         shape="administrator"
-                        clrVerticalNavIcon></clr-icon>
+                        clrVerticalNavIcon></cds-icon>
                     {{ 'SIDE_NAV.SYSTEM_MGMT.NAME' | translate }}
                     <a routerLink="#" hidden aria-hidden="true"></a>
                     <clr-vertical-nav-group-children *clrIfExpanded="true">
@@ -49,18 +49,18 @@
                             clrVerticalNavLink
                             routerLink="/harbor/users"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="users"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'SIDE_NAV.SYSTEM_MGMT.USER' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/robot-accounts"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="robot-head"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'SYSTEM_ROBOT.ROBOT_ACCOUNT_NAV' | translate }}
                         </a>
                         <a
@@ -68,61 +68,61 @@
                             clrVerticalNavLink
                             routerLink="/harbor/groups"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="users"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'SIDE_NAV.SYSTEM_MGMT.GROUP' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/registries"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="block"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'SIDE_NAV.SYSTEM_MGMT.REGISTRY' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/replications"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="cloud-traffic"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'SIDE_NAV.SYSTEM_MGMT.REPLICATION' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/distribution/instances"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="share"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'SIDE_NAV.DISTRIBUTIONS.NAME' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/labels"
                             routerLinkActive="active">
-                            <clr-icon shape="tag" clrVerticalNavIcon></clr-icon>
+                            <cds-icon shape="tag" clrVerticalNavIcon></cds-icon>
                             {{ 'CONFIG.LABEL' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/project-quotas"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="resource-pool"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'CONFIG.PROJECT_QUOTAS' | translate }}
                         </a>
                         <a
                             clrVerticalNavLink
                             routerLink="/harbor/interrogation-services"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="shield"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{
                                 'SIDE_NAV.SYSTEM_MGMT.INTERROGATION_SERVICES'
                                     | translate
@@ -133,9 +133,9 @@
                             *ngIf="hasAdminRole"
                             routerLink="/harbor/clearing-job"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="trash"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{ 'CLEARANCES.CLEARANCES' | translate }}
                         </a>
                         <a
@@ -143,9 +143,9 @@
                             *ngIf="hasAdminRole"
                             routerLink="/harbor/job-service-dashboard"
                             routerLinkActive="active">
-                            <clr-icon
+                            <cds-icon
                                 shape="dashboard"
-                                clrVerticalNavIcon></clr-icon>
+                                clrVerticalNavIcon></cds-icon>
                             {{
                                 'JOB_SERVICE_DASHBOARD.JOB_SERVICE_DASHBOARD'
                                     | translate
@@ -155,7 +155,7 @@
                             clrVerticalNavLink
                             routerLinkActive="active"
                             routerLink="/harbor/configs">
-                            <clr-icon shape="cog" clrVerticalNavIcon></clr-icon>
+                            <cds-icon shape="cog" clrVerticalNavIcon></cds-icon>
                             {{ 'SIDE_NAV.SYSTEM_MGMT.CONFIG' | translate }}
                         </a>
                     </clr-vertical-nav-group-children>
@@ -168,18 +168,18 @@
                             class="pointer"
                             clrVerticalNavLink
                             (click)="themeChanged(theme)">
-                            <clr-icon
+                            <cds-icon
                                 clrVerticalNavIcon
                                 size="20"
                                 *ngIf="styleMode === 'DARK'"
                                 shape="sun"
-                                class="is-solid"></clr-icon>
-                            <clr-icon
+                                class="is-solid"></cds-icon>
+                            <cds-icon
                                 clrVerticalNavIcon
                                 size="20"
                                 *ngIf="styleMode === 'LIGHT'"
                                 shape="moon"
-                                class="is-solid"></clr-icon>
+                                class="is-solid"></cds-icon>
                             {{ theme.text | translate }}
                         </a>
                     </ng-container>
@@ -190,9 +190,9 @@
                     routerLinkActive="active"
                     target="_blank"
                     routerLink="/devcenter-api-2.0">
-                    <clr-icon
+                    <cds-icon
                         shape="network-globe"
-                        clrVerticalNavIcon></clr-icon>
+                        clrVerticalNavIcon></cds-icon>
                     {{ 'SIDE_NAV.HARBOR_API_MANAGEMENT' | translate }}
                 </a>
             </div>

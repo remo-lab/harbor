@@ -27,6 +27,7 @@ import { RetentionService } from '../../../../../../ng-swagger-gen/services/rete
 import { ProjectService } from '../../../../../../ng-swagger-gen/services/project.service';
 
 @Component({
+    standalone: false,
     selector: 'app-immutable-tag',
     templateUrl: './immutable-tag.component.html',
     styleUrls: ['./immutable-tag.component.scss'],

@@ -35,7 +35,7 @@ describe('TagRetentionService', () => {
             service.getDetailByLink(testLink, false, false).subscribe(res => {
                 expect(res).toEqual(data);
             });
-            const httpTestingController = TestBed.get(HttpTestingController);
+            const httpTestingController = TestBed.inject(HttpTestingController);
             const req = httpTestingController.expectOne(testLink);
             expect(req.request.method).toEqual('GET');
             req.flush(data);

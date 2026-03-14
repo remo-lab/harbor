@@ -29,8 +29,8 @@ describe('PasswordSettingService', () => {
             providers: [PasswordSettingService],
         });
         injector = getTestBed();
-        service = injector.get(PasswordSettingService);
-        httpMock = injector.get(HttpTestingController);
+        service = injector.inject(PasswordSettingService);
+        httpMock = injector.inject(HttpTestingController);
     });
 
     it('should be created', inject(

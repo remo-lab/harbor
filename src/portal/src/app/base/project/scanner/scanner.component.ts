@@ -30,6 +30,7 @@ import { forkJoin, Observable } from 'rxjs';
 import { Project } from '../../../../../ng-swagger-gen/models/project';
 
 @Component({
+    standalone: false,
     selector: 'scanner',
     templateUrl: './scanner.component.html',
     styleUrls: ['./scanner.component.scss'],

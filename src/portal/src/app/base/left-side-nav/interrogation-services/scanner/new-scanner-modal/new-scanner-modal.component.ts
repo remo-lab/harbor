@@ -24,6 +24,7 @@ import { ScannerRegistrationReq } from '../../../../../../../ng-swagger-gen/mode
 import { clone } from '../../../../../shared/units/utils';
 
 @Component({
+    standalone: false,
     selector: 'new-scanner-modal',
     templateUrl: 'new-scanner-modal.component.html',
     styleUrls: ['../../../../../common.scss'],

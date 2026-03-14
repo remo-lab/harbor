@@ -43,6 +43,7 @@ import { SupportedWebhookEventTypes } from '../../../../../../ng-swagger-gen/mod
 import { PayloadFormatType } from '../../../../../../ng-swagger-gen/models/payload-format-type';
 
 @Component({
+    standalone: false,
     selector: 'add-webhook-form',
     templateUrl: './add-webhook-form.component.html',
     styleUrls: ['./add-webhook-form.component.scss'],

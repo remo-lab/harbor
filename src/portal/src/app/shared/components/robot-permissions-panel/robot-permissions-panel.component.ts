@@ -33,6 +33,7 @@ import { Access } from '../../../../../ng-swagger-gen/models/access';
 import { Permission } from '../../../../../ng-swagger-gen/models/permission';
 
 @Component({
+    standalone: false,
     selector: 'robot-permissions-panel',
     templateUrl: './robot-permissions-panel.component.html',
     styleUrls: ['./robot-permissions-panel.component.scss'],

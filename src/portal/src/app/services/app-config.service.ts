@@ -13,7 +13,7 @@
 // limitations under the License.
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CookieService } from 'ngx-cookie';
+import { CookieService } from 'ngx-cookie-service';
 import { AppConfig } from './app-config';
 import { maintainUrlQueryParmas } from '../shared/units/shared.utils';
 import { map } from 'rxjs/operators';
@@ -111,7 +111,7 @@ export class AppConfigService {
         }
 
         // Save back to cookie
-        this.cookie.put(CookieKeyOfAdmiral, endpoint);
+        this.cookie.set(CookieKeyOfAdmiral, endpoint);
         this.configurations.admiral_endpoint = endpoint;
     }
 }

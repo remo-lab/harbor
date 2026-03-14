@@ -2,7 +2,7 @@
     <clr-alert
         [clrAlertType]="globalMessage.type"
         [clrAlertAppLevel]="false"
-        [(clrAlertClosed)]="!globalMessageOpened"
+        [clrAlertClosed]="!globalMessageOpened"
         (clrAlertClosedChange)="onClose()">
         <clr-alert-item class="flex-center">
             <span class="alert-text">{{ message }}</span>

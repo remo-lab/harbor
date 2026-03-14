@@ -2,11 +2,11 @@
     <h4 class="mt-1">
         <span>{{ 'P2P_PROVIDER.POLICIES' | translate }}</span>
         <clr-tooltip>
-            <clr-icon
+            <cds-icon
                 class="color-57"
                 clrTooltipTrigger
                 shape="info-circle"
-                size="24"></clr-icon>
+                size="24"></cds-icon>
             <clr-tooltip-content
                 clrPosition="top-right"
                 clrSize="lg"
@@ -17,9 +17,9 @@
     </h4>
     <clr-datagrid
         (clrDgRefresh)="getPolicies($event)"
-        (clrDgSingleSelectedChange)="refreshJobs($event)"
+        (clrDgSelectedChange)="refreshJobs($event)"
         [clrDgLoading]="loading"
-        [(clrDgSingleSelected)]="selectedRow">
+        [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedRow">
         <clr-dg-action-bar>
             <div class="clr-row">
                 <div class="clr-col-7">
@@ -30,7 +30,7 @@
                         id="new-policy"
                         type="button"
                         class="btn btn-secondary">
-                        <clr-icon shape="plus" size="16"></clr-icon>
+                        <cds-icon shape="plus" size="16"></cds-icon>
                         {{ 'P2P_PROVIDER.NEW_POLICY' | translate }}
                     </button>
                     <clr-dropdown
@@ -39,9 +39,9 @@
                         clrDropdownTrigger>
                         <span id="action-policy"
                             >{{ 'MEMBER.ACTION' | translate }}
-                            <clr-icon
+                            <cds-icon
                                 class="clr-icon"
-                                shape="caret down"></clr-icon
+                                shape="caret down"></cds-icon
                         ></span>
                         <clr-dropdown-menu *clrIfOpen>
                             <button
@@ -54,10 +54,10 @@
                                 "
                                 (click)="executePolicy()">
                                 <span>
-                                    <clr-icon
+                                    <cds-icon
                                         class="margin-top-0"
                                         size="16"
-                                        shape="play"></clr-icon>
+                                        shape="play"></cds-icon>
                                     <span
                                         id="execute-policy"
                                         class="margin-left-5px"
@@ -75,10 +75,10 @@
                                 "
                                 (click)="editPolicy()">
                                 <span>
-                                    <clr-icon
+                                    <cds-icon
                                         class="margin-top-0"
                                         size="16"
-                                        shape="pencil"></clr-icon>
+                                        shape="pencil"></cds-icon>
                                     <span
                                         id="edit-policy"
                                         class="margin-left-5px"
@@ -98,10 +98,10 @@
                                         *ngIf="
                                             selectedRow && !selectedRow.enabled
                                         ">
-                                        <clr-icon
+                                        <cds-icon
                                             class="margin-top-2"
                                             size="16"
-                                            shape="success-standard"></clr-icon>
+                                            shape="success-standard"></cds-icon>
                                         <span class="margin-left-5px">{{
                                             'WEBHOOK.ENABLED_BUTTON' | translate
                                         }}</span>
@@ -113,10 +113,10 @@
                                                 !selectedRow.enabled
                                             )
                                         ">
-                                        <clr-icon
+                                        <cds-icon
                                             class="margin-top-2"
                                             size="16"
-                                            shape="ban"></clr-icon>
+                                            shape="ban"></cds-icon>
                                         <span class="margin-left-5px">{{
                                             'WEBHOOK.DISABLED_BUTTON'
                                                 | translate
@@ -133,10 +133,10 @@
                                     !selectedRow || !hasDeletePermission
                                 ">
                                 <span>
-                                    <clr-icon
+                                    <cds-icon
                                         class="margin-top-0"
                                         size="16"
-                                        shape="times"></clr-icon>
+                                        shape="times"></cds-icon>
                                     <span
                                         id="delete-policy"
                                         class="margin-left-5px"
@@ -150,10 +150,10 @@
                 <div class="clr-col-5">
                     <div class="action-head-pos">
                         <span class="refresh-btn">
-                            <clr-icon
+                            <cds-icon
                                 shape="refresh"
                                 (click)="refresh()"
-                                [hidden]="loading"></clr-icon>
+                                [hidden]="loading"></cds-icon>
                         </span>
                     </div>
                 </div>
@@ -179,19 +179,19 @@
             <clr-dg-cell>{{ p.name }}</clr-dg-cell>
             <clr-dg-cell>
                 <div *ngIf="p.enabled" class="icon-wrap">
-                    <clr-icon
+                    <cds-icon
                         shape="check-circle"
                         size="20"
-                        class="is-success enabled-icon"></clr-icon>
+                        class="is-success enabled-icon"></cds-icon>
                     <span class="margin-left-5px">{{
                         'WEBHOOK.ENABLED' | translate
                     }}</span>
                 </div>
                 <div *ngIf="!p.enabled" class="icon-wrap">
-                    <clr-icon
+                    <cds-icon
                         shape="exclamation-triangle"
                         size="20"
-                        class="is-warning"></clr-icon>
+                        class="is-warning"></cds-icon>
                     <span class="margin-left-5px">{{
                         'WEBHOOK.DISABLED' | translate
                     }}</span>
@@ -311,7 +311,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="selectedRow">
     <h4 class="mt-2">{{ 'P2P_PROVIDER.EXECUTIONS' | translate }}</h4>
     <clr-datagrid
-        [(clrDgSingleSelected)]="selectedExecutionRow"
+        [clrDgSelectionType]="'single'" [(clrDgSelected)]="selectedExecutionRow"
         [clrDgLoading]="jobsLoading"
         (clrDgRefresh)="clrLoadJobs(null, true, $event)">
         <clr-dg-action-bar>
@@ -359,10 +359,10 @@
                                 | translate
                         }}"></hbr-filter>
                     <span class="refresh-btn">
-                        <clr-icon
+                        <cds-icon
                             shape="refresh"
                             (click)="refreshJobs()"
-                            [hidden]="loading"></clr-icon>
+                            [hidden]="loading"></cds-icon>
                     </span>
                 </div>
             </div>
@@ -394,11 +394,11 @@
             <clr-dg-cell>
                 {{ execution.status }}
                 <clr-tooltip>
-                    <clr-icon
+                    <cds-icon
                         *ngIf="execution.status_message"
                         clrTooltipTrigger
                         shape="info-circle"
-                        size="20"></clr-icon>
+                        size="20"></cds-icon>
                     <clr-tooltip-content
                         [clrPosition]="'left'"
                         clrSize="md"

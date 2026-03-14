@@ -28,6 +28,7 @@ import { isEmptyForm } from '../../units/shared.utils';
 import { SessionService } from '../../services/session.service';
 
 @Component({
+    standalone: false,
     selector: 'new-user-form',
     templateUrl: 'new-user-form.component.html',
     styleUrls: ['./new-user-form.component.scss', '../../../common.scss'],

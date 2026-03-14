@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CUSTOM_ELEMENTS_SCHEMA, SecurityContext } from '@angular/core';
-import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MarkdownModule } from 'ngx-markdown';
 import { ValuesComponent } from './values.component';
 import { AdditionsService } from '../additions.service';
 import { of } from 'rxjs';
@@ -42,13 +42,12 @@ describe('ValuesComponent', () => {
         await TestBed.configureTestingModule({
             imports: [
                 SharedTestingModule,
-                MarkdownModule.forRoot({ sanitize: SecurityContext.HTML }),
+                MarkdownModule.forRoot(),
             ],
             declarations: [ValuesComponent],
             schemas: [CUSTOM_ELEMENTS_SCHEMA],
             providers: [
                 { provide: AdditionsService, useValue: fakedAdditionsService },
-                { provide: MarkedOptions, useValue: {} },
             ],
         }).compileComponents();
     });

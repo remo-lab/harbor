@@ -18,6 +18,7 @@ import { ErrorHandler } from '../../../../../../shared/units/error-handler';
 import { finalize } from 'rxjs/operators';
 
 @Component({
+    standalone: false,
     selector: 'hbr-artifact-license',
     templateUrl: './license.component.html',
     styleUrls: ['./license.component.scss'],

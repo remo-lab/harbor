@@ -36,6 +36,7 @@ const SCHEDULE_TYPE = {
 };
 const PREFIX: string = '0 ';
 @Component({
+    standalone: false,
     selector: 'cron-selection',
     templateUrl: './cron-schedule.component.html',
     styleUrls: ['./cron-schedule.component.scss'],

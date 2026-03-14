@@ -13,10 +13,10 @@
             ></a
         >
         <div class="side-form">
-            <clr-icon
+            <cds-icon
                 shape="refresh"
                 class="freshIcon"
-                (click)="TabEvent()"></clr-icon>
+                (click)="TabEvent()"></cds-icon>
             <h3 class="custom-h2 event-text">
                 {{ 'OPERATION.LOCAL_EVENT' | translate }}
             </h3>
@@ -36,21 +36,21 @@
                                         [hidden]="
                                             item.state !== 'progressing'
                                         "></i>
-                                    <clr-icon
+                                    <cds-icon
                                         [hidden]="item.state !== 'success'"
                                         size="18"
                                         shape="success-standard"
-                                        class="color-green"></clr-icon>
-                                    <clr-icon
+                                        class="color-green"></cds-icon>
+                                    <cds-icon
                                         [hidden]="item.state !== 'failure'"
                                         size="18"
                                         shape="error-standard"
-                                        class="color-red"></clr-icon>
-                                    <clr-icon
+                                        class="color-red"></cds-icon>
+                                    <cds-icon
                                         [hidden]="item.state !== 'interrupt'"
                                         size="18"
                                         shape="unlink"
-                                        class="color-orange"></clr-icon>
+                                        class="color-orange"></cds-icon>
                                 </div>
                                 <div class="infoArea">
                                     <label
@@ -60,7 +60,7 @@
                                             <span class="job-name">{{
                                                 item.name | translate
                                             }}</span>
-                                            <clr-icon
+                                            <cds-icon
                                                 (click)="download(item)"
                                                 *ngIf="
                                                     item.state === 'success' &&
@@ -68,7 +68,7 @@
                                                 "
                                                 class="btn btn-link"
                                                 size="16"
-                                                shape="download"></clr-icon>
+                                                shape="download"></cds-icon>
                                         </span>
                                     </label>
                                     <span class="eventTarget">{{
@@ -93,21 +93,21 @@
                                         [hidden]="
                                             list.state !== 'progressing'
                                         "></i>
-                                    <clr-icon
+                                    <cds-icon
                                         [hidden]="list.state !== 'success'"
                                         size="18"
                                         shape="success-standard"
-                                        class="color-green"></clr-icon>
-                                    <clr-icon
+                                        class="color-green"></cds-icon>
+                                    <cds-icon
                                         [hidden]="list.state !== 'failure'"
                                         size="18"
                                         shape="error-standard"
-                                        class="color-red"></clr-icon>
-                                    <clr-icon
+                                        class="color-red"></cds-icon>
+                                    <cds-icon
                                         [hidden]="list.state !== 'interrupt'"
                                         size="18"
                                         shape="unlink"
-                                        class="color-orange"></clr-icon>
+                                        class="color-orange"></cds-icon>
                                 </div>
                                 <div class="infoArea">
                                     <label
@@ -145,23 +145,23 @@
                                             [hidden]="
                                                 item.state !== 'progressing'
                                             "></i>
-                                        <clr-icon
+                                        <cds-icon
                                             [hidden]="item.state !== 'success'"
                                             size="18"
                                             shape="success-standard"
-                                            class="color-green"></clr-icon>
-                                        <clr-icon
+                                            class="color-green"></cds-icon>
+                                        <cds-icon
                                             [hidden]="item.state !== 'failure'"
                                             size="18"
                                             shape="error-standard"
-                                            class="color-red"></clr-icon>
-                                        <clr-icon
+                                            class="color-red"></cds-icon>
+                                        <cds-icon
                                             [hidden]="
                                                 item.state !== 'interrupt'
                                             "
                                             size="18"
                                             shape="unlink"
-                                            class="color-orange"></clr-icon>
+                                            class="color-orange"></cds-icon>
                                     </div>
                                     <div class="infoArea">
                                         <label
@@ -198,16 +198,16 @@
                                         [hidden]="
                                             list.state !== 'progressing'
                                         "></i>
-                                    <clr-icon
+                                    <cds-icon
                                         [hidden]="list.state !== 'success'"
                                         size="18"
                                         shape="success-standard"
-                                        class="color-green"></clr-icon>
-                                    <clr-icon
+                                        class="color-green"></cds-icon>
+                                    <cds-icon
                                         [hidden]="list.state !== 'failure'"
                                         size="18"
                                         shape="error-standard"
-                                        class="color-red"></clr-icon>
+                                        class="color-red"></cds-icon>
                                 </div>
                                 <div class="infoArea">
                                     <label
@@ -245,23 +245,23 @@
                                             [hidden]="
                                                 item.state !== 'progressing'
                                             "></i>
-                                        <clr-icon
+                                        <cds-icon
                                             [hidden]="item.state !== 'success'"
                                             size="18"
                                             shape="success-standard"
-                                            class="color-green"></clr-icon>
-                                        <clr-icon
+                                            class="color-green"></cds-icon>
+                                        <cds-icon
                                             [hidden]="item.state !== 'failure'"
                                             size="18"
                                             shape="error-standard"
-                                            class="color-red"></clr-icon>
-                                        <clr-icon
+                                            class="color-red"></cds-icon>
+                                        <cds-icon
                                             [hidden]="
                                                 item.state !== 'interrupt'
                                             "
                                             size="18"
                                             shape="unlink"
-                                            class="color-orange"></clr-icon>
+                                            class="color-orange"></cds-icon>
                                     </div>
                                     <div class="infoArea">
                                         <label
@@ -298,16 +298,16 @@
                                         [hidden]="
                                             list.state !== 'progressing'
                                         "></i>
-                                    <clr-icon
+                                    <cds-icon
                                         [hidden]="list.state !== 'success'"
                                         size="18"
                                         shape="success-standard"
-                                        class="color-green"></clr-icon>
-                                    <clr-icon
+                                        class="color-green"></cds-icon>
+                                    <cds-icon
                                         [hidden]="list.state !== 'failure'"
                                         size="18"
                                         shape="error-standard"
-                                        class="color-red"></clr-icon>
+                                        class="color-red"></cds-icon>
                                 </div>
                                 <div class="infoArea">
                                     <label

@@ -9,11 +9,11 @@
                 (filterEvt)="doFilter($event)"
                 [currentValue]="currentTerm"></hbr-filter>
             <span class="refresh-btn">
-                <clr-icon
+                <cds-icon
                     shape="refresh"
                     [hidden]="inProgress"
                     ng-disabled="inProgress"
-                    (click)="refresh()"></clr-icon>
+                    (click)="refresh()"></cds-icon>
                 <span
                     class="spinner spinner-inline"
                     [hidden]="inProgress === false"></span>
@@ -31,7 +31,7 @@
                         id="add-new-user"
                         (click)="addNewUser()"
                         [disabled]="!canCreateUser">
-                        <clr-icon shape="plus" size="16"></clr-icon>&nbsp;{{
+                        <cds-icon shape="plus" size="16"></cds-icon>&nbsp;{{
                             'USER.ADD_ACTION' | translate
                         }}
                     </button>
@@ -41,7 +41,7 @@
                         id="set-admin"
                         [disabled]="!ifSameRole"
                         (click)="changeAdminRole()">
-                        <clr-icon shape="wrench" size="16"></clr-icon>&nbsp;{{
+                        <cds-icon shape="wrench" size="16"></cds-icon>&nbsp;{{
                             ISADMINISTRATOR | translate
                         }}
                     </button>
@@ -51,7 +51,7 @@
                         clrDropdownTrigger>
                         <span id="member-action"
                             >{{ 'BUTTON.ACTIONS' | translate
-                            }}<clr-icon shape="caret down"></clr-icon
+                            }}<cds-icon shape="caret down"></cds-icon
                         ></span>
                         <clr-dropdown-menu *clrIfOpen>
                             <clr-dropdown>
@@ -64,7 +64,7 @@
                                         !canCreateUser
                                     "
                                     (click)="openChangePwdModal()">
-                                    <clr-icon shape="edit" size="16"></clr-icon
+                                    <cds-icon shape="edit" size="16"></cds-icon
                                     >&nbsp;{{ 'RESET_PWD.TITLE' | translate }}
                                 </button>
                                 <div class="dropdown-divider"></div>
@@ -76,7 +76,7 @@
                                     [disabled]="
                                         !selectedRow.length || onlySelf
                                     ">
-                                    <clr-icon shape="times" size="16"></clr-icon
+                                    <cds-icon shape="times" size="16"></cds-icon
                                     >&nbsp;{{ 'USER.DEL_ACTION' | translate }}
                                 </button>
                             </clr-dropdown>
@@ -89,10 +89,10 @@
                 <clr-dg-column>
                     <span>{{ 'USER.COLUMN_ADMIN' | translate }}</span>
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="24"></clr-icon>
+                            size="24"></cds-icon>
                         <clr-tooltip-content
                             clrPosition="top-right"
                             clrSize="lg"

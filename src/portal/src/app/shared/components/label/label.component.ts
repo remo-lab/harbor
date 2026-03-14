@@ -44,6 +44,7 @@ import {
 import { ClrDatagridStateInterface } from '@clr/angular';
 
 @Component({
+    standalone: false,
     selector: 'hbr-label',
     templateUrl: './label.component.html',
     styleUrls: ['./label.component.scss'],

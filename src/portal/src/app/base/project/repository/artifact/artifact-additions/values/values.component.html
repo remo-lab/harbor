@@ -11,26 +11,26 @@
             (click)="showYamlFile(false)"
             (mouseenter)="mouseEnter('value')"
             (mouseleave)="mouseLeave('value')">
-            <clr-icon
+            <cds-icon
                 size="24"
                 shape="view-list"
                 title="list values"
                 [ngClass]="{
                     'is-highlight': isValueMode || isHovering('value')
-                }"></clr-icon>
+                }"></cds-icon>
         </span>
         <span
             class="list-btn"
             (click)="showYamlFile(true)"
             (mouseenter)="mouseEnter('yaml')"
             (mouseleave)="mouseLeave('yaml')">
-            <clr-icon
+            <cds-icon
                 size="24"
                 shape="file"
                 title="yaml file"
                 [ngClass]="{
                     'is-highlight': !isValueMode || isHovering('yaml')
-                }"></clr-icon>
+                }"></cds-icon>
         </span>
     </div>
 </div>

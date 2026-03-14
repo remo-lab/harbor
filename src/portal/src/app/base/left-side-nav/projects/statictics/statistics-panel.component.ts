@@ -21,6 +21,7 @@ import { StatisticService } from '../../../../../../ng-swagger-gen/services/stat
 import { getSizeNumber, getSizeUnit } from '../../../../shared/units/utils';
 
 @Component({
+    standalone: false,
     selector: 'statistics-panel',
     templateUrl: 'statistics-panel.component.html',
     styleUrls: ['statistics-panel.component.scss'],

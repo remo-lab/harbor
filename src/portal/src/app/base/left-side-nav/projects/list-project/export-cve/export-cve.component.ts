@@ -35,6 +35,7 @@ import { LabelService } from 'src/app/shared/services/label.service';
 const SUPPORTED_MIME_TYPE: string =
     'application/vnd.security.vulnerability.report; version=1.1';
 @Component({
+    standalone: false,
     selector: 'export-cve',
     templateUrl: './export-cve.component.html',
     styleUrls: ['./export-cve.component.scss'],

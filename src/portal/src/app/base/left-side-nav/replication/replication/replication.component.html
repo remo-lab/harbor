@@ -10,7 +10,7 @@
                     }}"
                     [currentValue]="search.ruleName"></hbr-filter>
                 <span class="refresh-btn" (click)="refreshRules()">
-                    <clr-icon shape="refresh"></clr-icon>
+                    <cds-icon shape="refresh"></cds-icon>
                 </span>
             </div>
         </div>
@@ -75,9 +75,9 @@
                             (filterEvt)="doSearchExecutions($event)"
                             [currentValue]="currentTerm"></hbr-filter>
                         <span class="refresh-btn">
-                            <clr-icon
+                            <cds-icon
                                 shape="refresh"
-                                (click)="refreshJobs()"></clr-icon>
+                                (click)="refreshJobs()"></cds-icon>
                         </span>
                     </div>
                 </div>
@@ -140,11 +140,11 @@
                     <clr-dg-cell>
                         {{ getStatusStr(j.status, j.status_text) }}
                         <clr-tooltip>
-                            <clr-icon
+                            <cds-icon
                                 *ngIf="j.status_text"
                                 clrTooltipTrigger
                                 shape="info-circle"
-                                size="20"></clr-icon>
+                                size="20"></cds-icon>
                             <clr-tooltip-content
                                 [clrPosition]="'left'"
                                 clrSize="md"

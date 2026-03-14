@@ -38,6 +38,7 @@ import {
 import { SessionService } from './shared/services/session.service';
 
 @Component({
+    standalone: false,
     selector: 'harbor-app',
     templateUrl: 'app.component.html',
 })

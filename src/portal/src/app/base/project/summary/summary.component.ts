@@ -31,6 +31,7 @@ import { Project } from '../../../../../ng-swagger-gen/models/project';
 import { Repository } from '../../../../../ng-swagger-gen/models/repository';
 
 @Component({
+    standalone: false,
     selector: 'summary',
     templateUrl: './summary.component.html',
     styleUrls: ['./summary.component.scss'],

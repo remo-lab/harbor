@@ -28,6 +28,7 @@ const RESOURCE_COLOR_GREY600: string = '#C7D1D6';
  * Guage to visualize percent usage.
  */
 @Component({
+    standalone: false,
     selector: 'esxc-gauge',
     templateUrl: 'gauge.component.html',
     styleUrls: ['gauge.component.scss'],

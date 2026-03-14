@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ClrDatagridStateInterface } from '@clr/angular/data/datagrid/interfaces/state.interface';
+import { ClrDatagridStateInterface } from '@clr/angular/data/datagrid';
 import {
     durationStr,
     getPageSizeFromLocalStorage,
@@ -44,6 +44,7 @@ import { JobServiceDashboardSharedDataService } from '../job-service-dashboard-s
 import { HEALTHY_TIME } from '../job-service-dashboard-health-check.service';
 
 @Component({
+    standalone: false,
     selector: 'app-pending-job-list',
     templateUrl: './pending-job-list.component.html',
     styleUrls: ['./pending-job-list.component.scss'],

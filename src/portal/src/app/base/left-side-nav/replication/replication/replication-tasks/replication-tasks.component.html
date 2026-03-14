@@ -26,19 +26,19 @@
                     <div
                         class="status-success"
                         *ngIf="execution && execution['status'] === 'Succeed'">
-                        <clr-icon
+                        <cds-icon
                             size="18"
                             shape="success-standard"
-                            class="color-green"></clr-icon>
+                            class="color-green"></cds-icon>
                         <span>{{ 'REPLICATION.SUCCESS' | translate }}</span>
                     </div>
                     <div
                         class="status-failed"
                         *ngIf="execution && execution['status'] === 'Failed'">
-                        <clr-icon
+                        <cds-icon
                             size="18"
                             shape="error-standard"
-                            class="color-red"></clr-icon>
+                            class="color-red"></cds-icon>
                         <span>{{ 'REPLICATION.FAILURE' | translate }}</span>
                     </div>
                 </div>
@@ -130,9 +130,9 @@
                     (filterEvt)="doSearch($event)"
                     [currentValue]="searchTask"></hbr-filter>
                 <span class="refresh-btn">
-                    <clr-icon
+                    <cds-icon
                         shape="refresh"
-                        (click)="refreshTasks()"></clr-icon>
+                        (click)="refreshTasks()"></cds-icon>
                 </span>
             </div>
         </div>
@@ -188,7 +188,7 @@
                         target="_blank"
                         [href]="viewLog(t.id)"
                         *ngIf="t.status !== 'Initialized'">
-                        <clr-icon shape="list"></clr-icon>
+                        <cds-icon shape="list"></cds-icon>
                     </a>
                 </clr-dg-cell>
             </clr-dg-row>

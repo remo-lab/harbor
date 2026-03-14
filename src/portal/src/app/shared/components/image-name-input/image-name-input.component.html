@@ -21,9 +21,9 @@
                     (keyup)="validateProjectName()"
                     formControlName="projectName"
                     autocomplete="off" />
-                <clr-icon
+                <cds-icon
                     class="clr-validate-icon"
-                    shape="exclamation-circle"></clr-icon>
+                    shape="exclamation-circle"></cds-icon>
                 <span
                     class="spinner spinner-inline"
                     [hidden]="!checkingName"></span>
@@ -73,9 +73,9 @@
                     class="clr-input w-90"
                     formControlName="repoName"
                     autocomplete="off" />
-                <clr-icon
+                <cds-icon
                     class="clr-validate-icon"
-                    shape="exclamation-circle"></clr-icon>
+                    shape="exclamation-circle"></cds-icon>
             </div>
             <clr-control-error
                 *ngIf="repoName.invalid && (repoName.dirty || repoName.touched)"

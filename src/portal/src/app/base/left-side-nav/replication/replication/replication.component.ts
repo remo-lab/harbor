@@ -102,6 +102,7 @@ const STATUS_MAP = {
 };
 
 @Component({
+    standalone: false,
     selector: 'hbr-replication',
     templateUrl: './replication.component.html',
     styleUrls: ['./replication.component.scss'],

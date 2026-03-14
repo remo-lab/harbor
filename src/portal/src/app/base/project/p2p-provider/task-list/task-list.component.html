@@ -22,19 +22,19 @@
                         <div
                             class="status-success"
                             *ngIf="execution && isSuccess()">
-                            <clr-icon
+                            <cds-icon
                                 size="18"
                                 shape="success-standard"
-                                class="color-green"></clr-icon>
+                                class="color-green"></cds-icon>
                             <span>{{ 'REPLICATION.SUCCESS' | translate }}</span>
                         </div>
                         <div
                             class="status-failed"
                             *ngIf="execution && isFailed()">
-                            <clr-icon
+                            <cds-icon
                                 size="18"
                                 shape="error-standard"
-                                class="color-red"></clr-icon>
+                                class="color-red"></cds-icon>
                             <span>{{ 'REPLICATION.FAILURE' | translate }}</span>
                         </div>
                     </div>
@@ -146,10 +146,10 @@
                             'REPLICATION.FILTER_PLACEHOLDER' | translate
                         }}"></hbr-filter>
                     <span class="refresh-btn">
-                        <clr-icon
+                        <cds-icon
                             shape="refresh"
                             (click)="refreshTasks()"
-                            [hidden]="loading"></clr-icon>
+                            [hidden]="loading"></cds-icon>
                     </span>
                 </div>
             </clr-dg-action-bar>
@@ -183,11 +183,11 @@
                 <clr-dg-cell
                     >{{ t.status }}
                     <clr-tooltip>
-                        <clr-icon
+                        <cds-icon
                             *ngIf="t.status_message"
                             clrTooltipTrigger
                             shape="info-circle"
-                            size="20"></clr-icon>
+                            size="20"></cds-icon>
                         <clr-tooltip-content
                             [clrPosition]="'left'"
                             clrSize="md"
@@ -216,7 +216,7 @@
                         target="_blank"
                         [href]="viewLog(t.id)"
                         *ngIf="t.status !== 'Initialized'">
-                        <clr-icon shape="list"></clr-icon>
+                        <cds-icon shape="list"></cds-icon>
                     </a>
                 </clr-dg-cell>
             </clr-dg-row>

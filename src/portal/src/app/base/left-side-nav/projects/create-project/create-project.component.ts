@@ -56,6 +56,7 @@ import { ProjectService } from '../../../../../../ng-swagger-gen/services/projec
 
 const PAGE_SIZE: number = 100;
 @Component({
+    standalone: false,
     selector: 'create-project',
     templateUrl: 'create-project.component.html',
     styleUrls: ['create-project.scss'],

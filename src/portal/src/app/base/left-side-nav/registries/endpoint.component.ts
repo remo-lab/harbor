@@ -52,6 +52,7 @@ import { ClrDatagridStateInterface } from '@clr/angular';
 import { Registry } from '../../../../../ng-swagger-gen/models/registry';
 
 @Component({
+    standalone: false,
     selector: 'hbr-endpoint',
     templateUrl: './endpoint.component.html',
     styleUrls: ['./endpoint.component.scss'],

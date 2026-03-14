@@ -26,6 +26,7 @@ import { MessageHandlerService } from 'src/app/shared/services/message-handler.s
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
+    standalone: false,
     selector: 'app-pull-command',
     templateUrl: './pull-command.component.html',
     styleUrls: ['./pull-command.component.scss'],

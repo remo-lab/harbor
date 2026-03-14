@@ -42,6 +42,7 @@ const TIMEOUT = 7000;
 const FILE_NAME_PREFIX: string = 'csv_file_';
 const RETRY_TIMES: number = 50;
 @Component({
+    standalone: false,
     selector: 'hbr-operation-model',
     templateUrl: './operation.component.html',
     styleUrls: ['./operation.component.css'],

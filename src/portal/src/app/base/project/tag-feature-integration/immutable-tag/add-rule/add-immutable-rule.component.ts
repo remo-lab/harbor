@@ -29,6 +29,7 @@ import { InlineAlertComponent } from '../../../../../shared/components/inline-al
 const EXISTING_RULE = 'TAG_RETENTION.EXISTING_RULE';
 const INVALID_RULE = 'TAG_RETENTION.INVALID_RULE';
 @Component({
+    standalone: false,
     selector: 'app-add-immutable-rule',
     templateUrl: './add-immutable-rule.component.html',
     styleUrls: ['./add-immutable-rule.component.scss'],

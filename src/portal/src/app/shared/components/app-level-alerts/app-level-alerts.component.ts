@@ -31,6 +31,7 @@ import {
 const HAS_SHOWED_SCANNER_INFO: string = 'hasShowScannerInfo';
 const YES: string = 'yes';
 @Component({
+    standalone: false,
     selector: 'app-app-level-alerts',
     templateUrl: './app-level-alerts.component.html',
     styleUrls: ['./app-level-alerts.component.scss'],

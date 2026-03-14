@@ -19,6 +19,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { InlineAlertComponent } from '../../../../shared/components/inline-alert/inline-alert.component';
 
 @Component({
+    standalone: false,
     selector: 'change-password',
     templateUrl: 'change-password.component.html',
     styleUrls: ['./change-password.component.scss', '../../../../common.scss'],

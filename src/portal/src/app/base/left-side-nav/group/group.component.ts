@@ -54,6 +54,7 @@ import { UserGroup } from '../../../../../ng-swagger-gen/models/user-group';
 import { FilterComponent } from '../../../shared/components/filter/filter.component';
 
 @Component({
+    standalone: false,
     selector: 'app-group',
     templateUrl: './group.component.html',
     styleUrls: ['./group.component.scss'],

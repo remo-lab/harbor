@@ -21,6 +21,7 @@ import { MessageService } from '../../shared/components/global-message/message.s
 import { AlertType } from '../../shared/entities/shared.const';
 
 @Component({
+    standalone: false,
     selector: 'sign-up-page',
     templateUrl: 'sign-up-page.component.html',
     styleUrls: ['../../common.scss'],

@@ -34,6 +34,7 @@ import { UserResp } from '../../../../../../ng-swagger-gen/models/user-resp';
 import { UserEntity } from '../../../../../../ng-swagger-gen/models/user-entity';
 
 @Component({
+    standalone: false,
     selector: 'add-member',
     templateUrl: 'add-member.component.html',
     styleUrls: ['add-member.component.scss'],

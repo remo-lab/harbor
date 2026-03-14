@@ -20,6 +20,7 @@ import { UN_LOGGED_PARAM, YES } from '../../../account/sign-in/sign-in.service';
 import { getRepoLink } from '../../../base/left-side-nav/interrogation-services/vulnerability-database/security-hub.interface';
 
 @Component({
+    standalone: false,
     selector: 'list-repository-ro',
     templateUrl: 'list-repository-ro.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,

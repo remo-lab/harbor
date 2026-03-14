@@ -23,6 +23,7 @@ import { WebhookPolicy } from '../../../../../../ng-swagger-gen/models/webhook-p
 import { SupportedWebhookEventTypes } from '../../../../../../ng-swagger-gen/models/supported-webhook-event-types';
 
 @Component({
+    standalone: false,
     selector: 'add-webhook',
     templateUrl: './add-webhook.component.html',
     styleUrls: ['./add-webhook.component.scss'],

@@ -26,13 +26,13 @@
                     class="dropdown-item"
                     *ngFor="let label of candidateLabels"
                     (click)="selectLabel(label)">
-                    <clr-icon
+                    <cds-icon
                         shape="check"
                         class="check-icon"
                         [style.visibility]="
                             isSelect(label) ? 'visible' : 'hidden'
                         ">
-                    </clr-icon>
+                    </cds-icon>
                     <hbr-label-piece [label]="label" [labelWidth]="130">
                     </hbr-label-piece>
                 </button>
@@ -45,13 +45,13 @@
                     class="dropdown-item"
                     *ngFor="let label of candidateLabels"
                     (click)="selectLabel(label)">
-                    <clr-icon
+                    <cds-icon
                         shape="check"
                         class="check-icon"
                         [style.visibility]="
                             isSelect(label) ? 'visible' : 'hidden'
                         ">
-                    </clr-icon>
+                    </cds-icon>
                     <hbr-label-piece [label]="label" [labelWidth]="130">
                     </hbr-label-piece>
                 </button>

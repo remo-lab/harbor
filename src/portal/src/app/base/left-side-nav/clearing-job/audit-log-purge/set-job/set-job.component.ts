@@ -37,6 +37,7 @@ const ONE_DAY: number = 24;
 const MAX_RETENTION_DAYS: number = 10000;
 
 @Component({
+    standalone: false,
     selector: 'app-set-job',
     templateUrl: './set-job.component.html',
     styleUrls: ['./set-job.component.scss'],
